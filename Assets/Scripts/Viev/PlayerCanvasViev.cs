@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ public class PlayerCanvasViev : MonoBehaviour
 
     [SerializeField] private GameObject _nextActionButton;
     [SerializeField] private GameObject _repeatActionButton;
-    [SerializeField] private TextMesh _textToShowInCanvas;
+    [SerializeField] private TextMeshPro _textToShowInCanvas;
 
 
     public void EnableActionButtons(bool value)
