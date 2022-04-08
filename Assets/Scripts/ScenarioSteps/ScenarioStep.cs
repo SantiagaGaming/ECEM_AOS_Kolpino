@@ -5,13 +5,14 @@ using UnityEngine.Events;
 
 public abstract class ScenarioStep : MonoBehaviour
 {
-    [SerializeField]protected SoundPlayer soundPlayer;
+    [SerializeField] protected PlayerCanvasController playerCanvasController;
+    [SerializeField] protected SoundPlayer soundPlayer;
 
     public UnityAction EndScenarioStepEvent;
     public UnityAction EndActionEvent;
 
-   protected int action;
-
+    protected TextHolder textHolder = new TextHolder();
+    protected int action;
 
     public virtual void StartScenarioStep()
     {

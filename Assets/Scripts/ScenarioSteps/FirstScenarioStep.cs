@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class FirstScenarioStep : ScenarioStep
 {
-    [SerializeField] private PlayerCanvasController _playerCanvasController;
-
-    private TextHolder _textHolder = new TextHolder();
+    
     public override void StartScenarioStep()
     {
         RepeatAction();
@@ -25,64 +23,68 @@ public class FirstScenarioStep : ScenarioStep
         if(number == 0)
         {
             soundPlayer.PlayBeginSound();
-            _playerCanvasController.SetCanvasText(_textHolder.BeginText);
+            playerCanvasController.SetCanvasText(textHolder.BeginText);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if(number ==1)
         {
             soundPlayer.Play1Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text1);
+            playerCanvasController.SetCanvasText(textHolder.Text1);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 2)
         {
             soundPlayer.Play2Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text2);
+            playerCanvasController.SetCanvasText(textHolder.Text2);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 3)
         {
             soundPlayer.Play3Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text3);
+            playerCanvasController.SetCanvasText(textHolder.Text3);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 4)
         {
             soundPlayer.Play4Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text4);
+            playerCanvasController.SetCanvasText(textHolder.Text4);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 5)
         {
             soundPlayer.Play5Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text5);
+            playerCanvasController.SetCanvasText(textHolder.Text5);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 6)
         {
             soundPlayer.Play6Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text6);
+            playerCanvasController.SetCanvasText(textHolder.Text6);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 7)
         {
             soundPlayer.Play7Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text7);
+            playerCanvasController.SetCanvasText(textHolder.Text7);
             StartCoroutine(WaitTillSoundEnds());
 
         }
         else if (number == 8)
         {
             soundPlayer.Play8Sound();
-            _playerCanvasController.SetCanvasText(_textHolder.Text8);
+            playerCanvasController.SetCanvasText(textHolder.Text8);
             StartCoroutine(WaitTillSoundEnds());
 
+        }
+        else if(number ==9)
+        {
+            EndActionEvent?.Invoke();
         }
 
     }
