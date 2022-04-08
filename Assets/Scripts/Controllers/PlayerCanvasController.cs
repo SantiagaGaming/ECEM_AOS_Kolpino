@@ -21,19 +21,23 @@ public class PlayerCanvasController : MonoBehaviour
     private void OnStartNextAction()
     {
         _scnerioStepsController.GetCurrentScenarioStep().StartNextAction();
-        EnableNextActionButton(false);
+      //  EnableNextActionButton(false);
         _talkingMan.EnableTalking(true);
     }
     private void OnRepeatAction()
     {
         _scnerioStepsController.GetCurrentScenarioStep().RepeatAction();
-        EnableNextActionButton(false);
+       // EnableNextActionButton(false);
         _talkingMan.EnableTalking(true);
     }
     public void EnableNextActionButton(bool value)
     {
-        _viev.EnableActionButtons(value);
+       // _viev.EnableActionButtons(value);
         _talkingMan.EnableTalking(!value);
+    }
+    public void SetCanvasText(string text)
+    {
+        _viev.ShowText(text);
     }
 
 }
