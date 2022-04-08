@@ -82,9 +82,9 @@ public class FirstScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
 
         }
-        else if(number ==9)
+        else if(number == 9)
         {
-            EndActionEvent?.Invoke();
+            EndScenarioStepEvent();
         }
 
     }

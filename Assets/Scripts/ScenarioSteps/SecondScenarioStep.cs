@@ -19,6 +19,12 @@ public class SecondScenarioStep : ScenarioStep
     }
     private void CheckActions(int number)
     {
+        if (number == 0)
+        {
+            soundPlayer.Play201Sound();
+            playerCanvasController.SetCanvasText(textHolder.Text201);
+            StartCoroutine(WaitTillSoundEnds());
+        }
     }
 }
 

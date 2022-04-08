@@ -14,6 +14,7 @@ public class SoundPlayer : MonoBehaviour
     [SerializeField] private AudioClip _7sound;
     [SerializeField] private AudioClip _8sound;
     [SerializeField] private AudioClip _9sound;
+    [SerializeField] private AudioClip _201sound;
 
 
     private AudioClip _currentClip;
@@ -75,6 +76,12 @@ public class SoundPlayer : MonoBehaviour
         _audioSource.Stop();
         _audioSource.PlayOneShot(_9sound);
         _currentClip = _9sound;
+    }
+    public void Play201Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_201sound);
+        _currentClip = _201sound;
     }
 
 
