@@ -15,6 +15,14 @@ public class SoundPlayer : MonoBehaviour
     [SerializeField] private AudioClip _8sound;
     [SerializeField] private AudioClip _9sound;
     [SerializeField] private AudioClip _201sound;
+    [SerializeField] private AudioClip _16sound;
+    [SerializeField] private AudioClip _17sound;
+    [SerializeField] private AudioClip _18sound;
+    [SerializeField] private AudioClip _19sound;
+    [SerializeField] private AudioClip _20sound;
+    [SerializeField] private AudioClip _21sound;
+    [SerializeField] private AudioClip _22sound;
+    [SerializeField] private AudioClip _23sound;
 
 
     private AudioClip _currentClip;
@@ -83,7 +91,53 @@ public class SoundPlayer : MonoBehaviour
         _audioSource.PlayOneShot(_201sound);
         _currentClip = _201sound;
     }
-
-
+    public void Play16Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_16sound);
+        _currentClip = _16sound;
+    }
+    public void Play17Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_17sound);
+        _currentClip = _17sound;
+    }
+    public void Play18Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_18sound);
+        _currentClip = _18sound;
+    }
+    public void Play19Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_19sound);
+        _currentClip = _19sound;
+    }
+    public void Play20Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_20sound);
+        _currentClip = _20sound;
+    }
+    public void Play21Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_21sound);
+        _currentClip = _21sound;
+    }
+    public void Play22Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_22sound);
+        _currentClip = _22sound;
+    }
+    public void Play23Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_23sound);
+        _currentClip = _23sound;
+    }
 
 }
