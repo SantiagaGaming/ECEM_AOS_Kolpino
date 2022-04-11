@@ -4,21 +4,7 @@ using UnityEngine;
 
 public class FirstScenarioStep : ScenarioStep
 {
-    
-    public override void StartScenarioStep()
-    {
-        RepeatAction();
-    }
-    public override void StartNextAction()
-    {
-        base.StartNextAction();
-        CheckActions(action);
-    }
-    public override void RepeatAction()
-    {
-        CheckActions(action);
-    }
-    private void CheckActions(int number)
+protected override void CheckActions(int number)
     {
         if(number == 0)
         {

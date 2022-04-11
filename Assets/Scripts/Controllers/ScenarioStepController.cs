@@ -33,6 +33,6 @@ public class ScenarioStepController : MonoBehaviour
     }
     private void OnEndScanarioAction()
     {
-        _playerCanvasController.EnableNextActionButton(true);
+        _playerCanvasController.DisableTalkingMan();
     }
 }

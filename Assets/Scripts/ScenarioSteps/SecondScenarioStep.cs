@@ -12,20 +12,7 @@ public class SecondScenarioStep : ScenarioStep
     [SerializeField] private BaseObject _lamp1;
     [SerializeField] private BaseObject _lamp2;
 
-    public override void StartScenarioStep()
-    {
-        RepeatAction();
-    }
-    public override void StartNextAction()
-    {
-        base.StartNextAction();
-        CheckActions(action);
-    }
-    public override void RepeatAction()
-    {
-        CheckActions(action);
-    }
-    private void CheckActions(int number)
+   protected override void CheckActions(int number)
     {
         if (number == 0)
         {
@@ -41,7 +28,7 @@ public class SecondScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
 
         }
-        else if(number == 2)
+        else if (number == 2)
         {
             _shkafCPU.RevertAction();
             soundPlayer.Play17Sound();
@@ -60,7 +47,7 @@ public class SecondScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(textHolder.Text18);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if(number == 4)
+        else if (number == 4)
         {
             _shkafCross1.RevertAction();
             _shkafCross2.RevertAction();
@@ -68,7 +55,7 @@ public class SecondScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(textHolder.Text19);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if(number == 5)
+        else if (number == 5)
         {
             soundPlayer.Play20Sound();
             playerCanvasController.SetCanvasText(textHolder.Text20);
@@ -90,18 +77,19 @@ public class SecondScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(textHolder.Text22);
             StartCoroutine(WaitTillSoundEnds());
         }
- 
+
         else if (number == 8)
         {
             soundPlayer.Play23Sound();
             playerCanvasController.SetCanvasText(textHolder.Text23);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if(number == 9)
+        else if (number == 9)
         {
             EndScenarioStepEvent();
         }
 
     }
 }
+
 

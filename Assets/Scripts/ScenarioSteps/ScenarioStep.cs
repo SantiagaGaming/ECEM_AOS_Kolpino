@@ -14,15 +14,20 @@ public abstract class ScenarioStep : MonoBehaviour
     protected TextHolder textHolder = new TextHolder();
     protected int action;
 
-    public virtual void StartScenarioStep()
+    public  void StartScenarioStep()
     {
-
+        RepeatAction();
     }
-    public virtual void StartNextAction()
+    public  void StartNextAction()
     {
         action++;
+        CheckActions(action);
     }
-    public virtual void RepeatAction()
+    public void RepeatAction()
+    {
+        CheckActions(action);
+    }
+   protected virtual void CheckActions(int number)
     {
 
     }

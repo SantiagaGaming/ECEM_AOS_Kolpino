@@ -20,6 +20,8 @@ public class TextHolder
     public string Text21 { get; private set; } = "Нормальная работа УВК контролируется не только в АРМах, но с помощью световых индикаторов на крышах шкафов(лампы зелёного цвета).";
     public string Text22 { get; private set; } = "При неисправности какого-либо модуля в шкафу лампа на его крыше перейдёт в режим мигания, или погаснет.";
     public string Text23 { get; private set; } = "В зависимости от возникшей неисправности.";
+    public string Text24 { get; private set; } = "Давайте откроем Шкафы УВК и посмотрим, что находится внутри.";
+    public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";
 
 
 }
