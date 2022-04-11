@@ -13,6 +13,7 @@ public class PlayerCanvasViev : MonoBehaviour
     [SerializeField] private GameObject _nextActionButton;
     [SerializeField] private GameObject _repeatActionButton;
     [SerializeField] private TextMeshPro _textToShowInCanvas;
+    [SerializeField] private GameObject _canvas;
 
 
     public void EnableActionButtons(bool value)
@@ -23,6 +24,12 @@ public class PlayerCanvasViev : MonoBehaviour
     public void ShowText(string text)
     {
         _textToShowInCanvas.text = text;
+    }
+    public void EnableCanvas(bool value)
+    {
+        _canvas.SetActive(value);
+        _nextActionButton.SetActive(value);
+        _repeatActionButton.SetActive(value);
     }
 
 

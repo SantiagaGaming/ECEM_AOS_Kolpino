@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class OpenDoorController : MonoBehaviour
 {
-    public UnityAction AllDoorsOpenedEvent;
+    public UnityAction <bool>AllDoorsOpenedEvent;
+    public UnityAction FirstDoorTappedEvent;
     [SerializeField] private DoorObject[] _doorObjects;
 
     private int _doors;
@@ -20,9 +21,10 @@ public class OpenDoorController : MonoBehaviour
     public void OnDoorOpen()
     {
         _doors++;
+        AllDoorsOpenedEvent?.Invoke(false);
         if (_doors >= 4)
         {
-            AllDoorsOpenedEvent?.Invoke();
+            AllDoorsOpenedEvent?.Invoke(true);
         }
           
     }

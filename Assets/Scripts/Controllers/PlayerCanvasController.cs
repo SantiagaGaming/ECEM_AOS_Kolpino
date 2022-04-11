@@ -13,13 +13,14 @@ public class PlayerCanvasController : MonoBehaviour
     {
         _viev.TapNextActionButtonEvent += OnStartNextAction;
         _viev.TapRepeatActionButtonEvent += OnRepeatAction;
-        _openDoorController.AllDoorsOpenedEvent += OnDoorsOpened;
+        _openDoorController.AllDoorsOpenedEvent += OnEbaleCanvas;
+
     }
     private void OnDisable()
     {
         _viev.TapNextActionButtonEvent -= OnStartNextAction;
         _viev.TapRepeatActionButtonEvent -= OnRepeatAction;
-        _openDoorController.AllDoorsOpenedEvent -= OnDoorsOpened;
+        _openDoorController.AllDoorsOpenedEvent -= OnEbaleCanvas;
     }
     private void OnStartNextAction()
     {
@@ -46,9 +47,9 @@ public class PlayerCanvasController : MonoBehaviour
     {
         _talkingMan.EnableTalking(false);
     }
-    private void OnDoorsOpened()
+    private void OnEbaleCanvas(bool value)
     {
-        EnableNextRepeatActionButton(true);
+        _viev.EnableCanvas(value);
     }
 
 }
