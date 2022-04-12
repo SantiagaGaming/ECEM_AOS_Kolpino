@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ThirdScenarioStep : ScenarioStep
 {
+    public UnityAction ShowRepeatButtonEvent;
+
     [SerializeField] private OpenDoorController _openDoorController;
     protected override void CheckActions(int number)
     {
@@ -20,8 +23,10 @@ public class ThirdScenarioStep : ScenarioStep
             playerCanvasController.EnableNextRepeatActionButton(false);
             playerCanvasController.SetCanvasText(textHolder.OpenDoorActionText);
             _openDoorController.EnableDoorsColliders();
-
-
+        }
+        else if(number == 2)
+        {
+            ShowRepeatButtonEvent?.Invoke();
         }
     }
 }

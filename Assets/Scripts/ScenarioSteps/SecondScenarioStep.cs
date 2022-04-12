@@ -63,16 +63,14 @@ public class SecondScenarioStep : ScenarioStep
         }
         else if (number == 6)
         {
-            _lamp1.StartAction();
-            _lamp2.StartAction();
             soundPlayer.Play21Sound();
             playerCanvasController.SetCanvasText(textHolder.Text21);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 7)
         {
-            _lamp1.RevertAction();
-            _lamp2.RevertAction();
+            _lamp1.StartAction();
+            _lamp2.StartAction();
             soundPlayer.Play22Sound();
             playerCanvasController.SetCanvasText(textHolder.Text22);
             StartCoroutine(WaitTillSoundEnds());
@@ -80,6 +78,8 @@ public class SecondScenarioStep : ScenarioStep
 
         else if (number == 8)
         {
+            _lamp1.RevertAction();
+            _lamp2.RevertAction();
             soundPlayer.Play23Sound();
             playerCanvasController.SetCanvasText(textHolder.Text23);
             StartCoroutine(WaitTillSoundEnds());

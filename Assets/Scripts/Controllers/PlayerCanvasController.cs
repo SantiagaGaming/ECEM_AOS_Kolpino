@@ -9,12 +9,14 @@ public class PlayerCanvasController : MonoBehaviour
     [SerializeField] private TalkingMan _talkingMan;
     [SerializeField] private OpenDoorController _openDoorController;
     [SerializeField] private CanvasPositionChanger _canvasPositionChanger;
+    [SerializeField] private ThirdScenarioStep _thirdScenario;
 
     private void OnEnable()
     {
         _viev.TapNextActionButtonEvent += OnStartNextAction;
         _viev.TapRepeatActionButtonEvent += OnRepeatAction;
         _openDoorController.AllDoorsOpenedEvent += OnEnableCanvas;
+        _thirdScenario.ShowRepeatButtonEvent += OnEnableRepeatButton;
 
     }
     private void OnDisable()
@@ -22,6 +24,7 @@ public class PlayerCanvasController : MonoBehaviour
         _viev.TapNextActionButtonEvent -= OnStartNextAction;
         _viev.TapRepeatActionButtonEvent -= OnRepeatAction;
         _openDoorController.AllDoorsOpenedEvent -= OnEnableCanvas;
+        _thirdScenario.ShowRepeatButtonEvent -= OnEnableRepeatButton;
     }
     private void OnStartNextAction()
     {
@@ -50,9 +53,12 @@ public class PlayerCanvasController : MonoBehaviour
     }
     private void OnEnableCanvas(bool value)
     {
-
         _canvasPositionChanger.ChangeCanvasPostitionToTalkingMan();
         _viev.EnableCanvas(value);
+        _viev.EnableRepeatButton(false);
     }
-
+    private void OnEnableRepeatButton()
+    {
+        _viev.EnableRepeatButton(true);
+    }
 }
