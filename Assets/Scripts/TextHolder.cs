@@ -24,6 +24,9 @@ public class TextHolder
     public string Text28 { get; private set; } = "В частности, в системе ЭЦ-ЕМ используется Трёхканальная система, основанная на принципе мажоритирования.";
     public string Text31 { get; private set; } = "В УВК-РА мажоритарные алгоритмы принятия решения реализуются в трёх вычислительных каналах шкафа ЦПУ и шкафов УСО.";
     public string Text202 { get; private set; } = "В частности, при обработке данных от модулей, объединённых в триады (модули из состава шкафа УСО), применяются мажоритарные алгоритмы «два из трёх».";
+    public string Text205 { get; private set; } = "Первый канал.";
+    public string Text206 { get; private set; } = "Второй канал.";
+    public string Text207 { get; private set; } = "Третий канал.";
 
 
     public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";
