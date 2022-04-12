@@ -9,9 +9,11 @@ public abstract class ScenarioStep : MonoBehaviour
     public UnityAction EndActionEvent;
 
     [SerializeField] protected PlayerCanvasController playerCanvasController;
-    [SerializeField] protected SoundPlayer soundPlayer;
+    [SerializeField] protected YvkSoundPlayer yvkSoundPlayer;
+    [SerializeField] protected DspSoundPlayer dspSoundPlayer;
 
-    protected TextHolder textHolder = new TextHolder();
+    protected YvkTextHolder yvktextHolder = new YvkTextHolder();
+    protected DspTextHolder dspTextHolder = new DspTextHolder();
     protected int action;
 
     public  void StartScenarioStep()
@@ -33,7 +35,7 @@ public abstract class ScenarioStep : MonoBehaviour
     }
     protected IEnumerator WaitTillSoundEnds()
     {
-        yield return new WaitForSeconds(soundPlayer.GetSoundLenght());
+        yield return new WaitForSeconds(yvkSoundPlayer.GetSoundLenght());
         EndActionEvent?.Invoke();
     }
 }

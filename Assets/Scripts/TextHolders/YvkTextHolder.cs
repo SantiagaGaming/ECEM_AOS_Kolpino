@@ -1,6 +1,6 @@
 
 
-public class TextHolder
+public class YvkTextHolder
 {
     public string BeginText { get; private set; } = "Мы находимся в помещении, где расположен управляющий вычислительный комплекс УВК-РА. Собственно говоря, это Мозг станции, который заключён в этих шкафах.";
     public string Text1 { get; private set; } = "УВК-РА выполняет следующие основные функции:";

@@ -16,14 +16,14 @@ public class SecondScenarioStep : ScenarioStep
     {
         if (number == 0)
         {
-            soundPlayer.Play201Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text201);
+            yvkSoundPlayer.Play201Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text201);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 1)
         {
-            soundPlayer.Play16Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text16);
+            yvkSoundPlayer.Play16Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text16);
             _shkafCPU.StartAction();
             StartCoroutine(WaitTillSoundEnds());
 
@@ -31,8 +31,8 @@ public class SecondScenarioStep : ScenarioStep
         else if (number == 2)
         {
             _shkafCPU.RevertAction();
-            soundPlayer.Play17Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text17);
+            yvkSoundPlayer.Play17Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text17);
             _shkafUCO1.StartAction();
             _shkafUCO2.StartAction();
             StartCoroutine(WaitTillSoundEnds());
@@ -43,36 +43,36 @@ public class SecondScenarioStep : ScenarioStep
             _shkafUCO2.RevertAction();
             _shkafCross1.StartAction();
             _shkafCross2.StartAction();
-            soundPlayer.Play18Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text18);
+            yvkSoundPlayer.Play18Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text18);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 4)
         {
             _shkafCross1.RevertAction();
             _shkafCross2.RevertAction();
-            soundPlayer.Play19Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text19);
+            yvkSoundPlayer.Play19Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text19);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 5)
         {
-            soundPlayer.Play20Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text20);
+            yvkSoundPlayer.Play20Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text20);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 6)
         {
-            soundPlayer.Play21Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text21);
+            yvkSoundPlayer.Play21Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text21);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 7)
         {
             _lamp1.StartAction();
             _lamp2.StartAction();
-            soundPlayer.Play22Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text22);
+            yvkSoundPlayer.Play22Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text22);
             StartCoroutine(WaitTillSoundEnds());
         }
 
@@ -80,8 +80,8 @@ public class SecondScenarioStep : ScenarioStep
         {
             _lamp1.RevertAction();
             _lamp2.RevertAction();
-            soundPlayer.Play23Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text23);
+            yvkSoundPlayer.Play23Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text23);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 9)

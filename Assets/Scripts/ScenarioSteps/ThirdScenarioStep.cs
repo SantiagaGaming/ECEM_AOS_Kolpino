@@ -22,41 +22,41 @@ public class ThirdScenarioStep : ScenarioStep
 
         if (number == 0)
         {
-            soundPlayer.Play24Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text24);
+            yvkSoundPlayer.Play24Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text24);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 1)
         {
             playerCanvasController.EnableNextRepeatActionButton(false);
-            playerCanvasController.SetCanvasText(textHolder.OpenDoorActionText);
+            playerCanvasController.SetCanvasText(yvktextHolder.OpenDoorActionText);
             _openDoorController.EnableDoorsColliders();
         }
         else if (number == 2)
         {
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play28Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text28);
+            yvkSoundPlayer.Play28Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text28);
         }
         else if (number == 3)
         {
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play31Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text31);
+            yvkSoundPlayer.Play31Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text31);
         }
         else if (number == 4)
         {
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play202Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text202);
+            yvkSoundPlayer.Play202Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text202);
         }
         else if (number == 5)
         {
             _scpy1.StartAction();
             _mip1.StartAction();
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play205Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text205);
+            yvkSoundPlayer.Play205Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text205);
         }
         else if (number == 6)
         {
@@ -65,8 +65,8 @@ public class ThirdScenarioStep : ScenarioStep
             _scpy2.StartAction();
             _mip2.StartAction();
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play206Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text206);
+            yvkSoundPlayer.Play206Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text206);
         }
         else if (number == 7)
         {
@@ -75,15 +75,15 @@ public class ThirdScenarioStep : ScenarioStep
             _scpy3.StartAction();
             _mip3.StartAction();
             ShowRepeatButtonEvent?.Invoke();
-            soundPlayer.Play207Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text207);
+            yvkSoundPlayer.Play207Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text207);
         }
         else if (number == 8)
         {
             _scpy3.RevertAction();
             _mip3.RevertAction();
-            soundPlayer.Play203Sound();
-            playerCanvasController.SetCanvasText(textHolder.Text203);
+            yvkSoundPlayer.Play203Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text203);
         }
      }
 }

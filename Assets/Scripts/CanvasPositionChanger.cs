@@ -5,11 +5,23 @@ using UnityEngine;
 public class CanvasPositionChanger : MonoBehaviour
 {
     [SerializeField] private Transform _talkingManTransform;
-
+    [SerializeField] private Transform _yvkPosition;
+    [SerializeField] private Transform _dspPosition;
 
     public void ChangeCanvasPostitionToTalkingMan()
     {
         transform.position = _talkingManTransform.position;
         transform.rotation = _talkingManTransform.rotation;
     }
+    public void ChangeCanvasPositionToYvk()
+    {
+        transform.position = _yvkPosition.position;
+        transform.rotation = _yvkPosition.rotation;
+    }
+    public void ChangeCanvasPositionToDsp()
+    {
+        transform.position = _dspPosition.position;
+        transform.rotation = _dspPosition.rotation;
+    }
+
 }
