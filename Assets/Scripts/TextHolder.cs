@@ -27,6 +27,7 @@ public class TextHolder
     public string Text205 { get; private set; } = "Первый канал.";
     public string Text206 { get; private set; } = "Второй канал.";
     public string Text207 { get; private set; } = "Третий канал.";
+    public string Text203 { get; private set; } = "В случае нарушения алгоритма мажоритирования вычислительное устройство переходит в безопасное необратимое состояние и при этом обеспечивается безопасное состояние устройств ЖАТ.";
 
 
     public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";

@@ -82,6 +82,8 @@ public class ThirdScenarioStep : ScenarioStep
         {
             _scpy3.RevertAction();
             _mip3.RevertAction();
+            soundPlayer.Play203Sound();
+            playerCanvasController.SetCanvasText(textHolder.Text203);
         }
      }
 }
