@@ -27,6 +27,21 @@ public class ThirdScenarioStep : ScenarioStep
         else if(number == 2)
         {
             ShowRepeatButtonEvent?.Invoke();
+            soundPlayer.Play28Sound();
+            playerCanvasController.SetCanvasText(textHolder.Text28);
         }
+        else if (number == 3)
+        {
+            ShowRepeatButtonEvent?.Invoke();
+            soundPlayer.Play31Sound();
+            playerCanvasController.SetCanvasText(textHolder.Text31);
+        }
+        else if (number == 4)
+        {
+            ShowRepeatButtonEvent?.Invoke();
+            soundPlayer.Play202Sound();
+            playerCanvasController.SetCanvasText(textHolder.Text202);
+        }
+
     }
 }

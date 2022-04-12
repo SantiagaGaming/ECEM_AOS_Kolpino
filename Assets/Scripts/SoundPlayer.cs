@@ -24,6 +24,9 @@ public class SoundPlayer : MonoBehaviour
     [SerializeField] private AudioClip _22sound;
     [SerializeField] private AudioClip _23sound;
     [SerializeField] private AudioClip _24sound;
+    [SerializeField] private AudioClip _28sound;
+    [SerializeField] private AudioClip _31sound;
+    [SerializeField] private AudioClip _202sound;
 
 
     private AudioClip _currentClip;
@@ -145,6 +148,24 @@ public class SoundPlayer : MonoBehaviour
         _audioSource.Stop();
         _audioSource.PlayOneShot(_24sound);
         _currentClip = _24sound;
+    }
+    public void Play28Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_28sound);
+        _currentClip = _28sound;
+    }
+    public void Play31Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_31sound);
+        _currentClip = _31sound;
+    }
+    public void Play202Sound()
+    {
+        _audioSource.Stop();
+        _audioSource.PlayOneShot(_202sound);
+        _currentClip = _202sound;
     }
 
 }
