@@ -35,6 +35,9 @@ public abstract class ScenarioStep : MonoBehaviour
     }
     protected IEnumerator WaitTillSoundEnds()
     {
+        if (dspSoundPlayer.GetSoundLenght()!= 0)
+            yield return new WaitForSeconds(dspSoundPlayer.GetSoundLenght());
+    else
         yield return new WaitForSeconds(yvkSoundPlayer.GetSoundLenght());
         EndActionEvent?.Invoke();
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ThirdScenarioStep : ScenarioStep
+public class YvkScenarioStep3 : ScenarioStep
 {
     public UnityAction ShowRepeatButtonEvent;
 
@@ -85,5 +85,10 @@ public class ThirdScenarioStep : ScenarioStep
             yvkSoundPlayer.Play203Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text203);
         }
-     }
+        else if (number == 9)
+        {
+            yvkSoundPlayer.Play44Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text44);
+        }
+    }
 }

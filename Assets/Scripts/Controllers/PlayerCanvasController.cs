@@ -9,7 +9,7 @@ public class PlayerCanvasController : MonoBehaviour
     [SerializeField] private TalkingMan _talkingMan;
     [SerializeField] private OpenDoorController _openDoorController;
     [SerializeField] private CanvasPositionChanger _canvasPositionChanger;
-    [SerializeField] private ThirdScenarioStep _thirdScenario;
+    [SerializeField] private YvkScenarioStep3 _thirdScenario;
 
     private void OnEnable()
     {

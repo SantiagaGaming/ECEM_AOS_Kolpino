@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondScenarioStep : ScenarioStep
+public class YvkScenarioStep2 : ScenarioStep
 {
     [SerializeField] private BaseObject _shkafCPU;
     [SerializeField] private BaseObject _shkafUCO1;
