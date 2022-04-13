@@ -29,6 +29,10 @@ public class YvkTextHolder
     public string Text207 { get; private set; } = "Третий канал.";
     public string Text203 { get; private set; } = "В случае нарушения алгоритма мажоритирования вычислительное устройство переходит в безопасное необратимое состояние и при этом обеспечивается безопасное состояние устройств ЖАТ.";
     public string Text44 { get; private set; } = "Обратите внимание на Шкаф с блоками Центрального процессорного устройства.";
+    public string Text45_1 { get; private set; } = "В этом шкафу установлены: три комплекта (ведь система трёхканальная) модулей (выдвижных плат) Центрального процессорного устройства(СЦПУ).";
+    public string Text45_2 { get; private set; } = "И Модулей питания(МИП)";
+    public string Text46 { get; private set; } = "Коммутаторы связи с другими шкафами и устройствами(switch).";
+    public string Text47 { get; private set; } = "Компьютер с выдвижным монитором для контроля состояния всех составных частей УВК.";
 
     public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";
 

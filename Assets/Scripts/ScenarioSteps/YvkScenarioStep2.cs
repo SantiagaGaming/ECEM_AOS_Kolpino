@@ -30,30 +30,30 @@ public class YvkScenarioStep2 : ScenarioStep
         }
         else if (number == 2)
         {
-            _shkafCPU.RevertAction();
             yvkSoundPlayer.Play17Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text17);
+            _shkafCPU.RevertAction();
             _shkafUCO1.StartAction();
             _shkafUCO2.StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 3)
         {
+            yvkSoundPlayer.Play18Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text18);
             _shkafUCO1.RevertAction();
             _shkafUCO2.RevertAction();
             _shkafCross1.StartAction();
             _shkafCross2.StartAction();
-            yvkSoundPlayer.Play18Sound();
-            playerCanvasController.SetCanvasText(yvktextHolder.Text18);
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 4)
         {
-            _shkafCross1.RevertAction();
-            _shkafCross2.RevertAction();
             yvkSoundPlayer.Play19Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text19);
-            StartCoroutine(WaitTillSoundEnds());
+            _shkafCross1.RevertAction();
+            _shkafCross2.RevertAction();
+             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 5)
         {
@@ -69,20 +69,20 @@ public class YvkScenarioStep2 : ScenarioStep
         }
         else if (number == 7)
         {
-            _lamp1.StartAction();
-            _lamp2.StartAction();
             yvkSoundPlayer.Play22Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text22);
+            _lamp1.StartAction();
+            _lamp2.StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
 
         else if (number == 8)
         {
-            _lamp1.RevertAction();
-            _lamp2.RevertAction();
             yvkSoundPlayer.Play23Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text23);
-            StartCoroutine(WaitTillSoundEnds());
+            _lamp1.RevertAction();
+            _lamp2.RevertAction();
+               StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 9)
         {
