@@ -40,7 +40,7 @@ public class NotebookObject : BaseObject
                 x--;
                 yield return new WaitForSeconds(0.01f);
             }
-            ShowNoteBookEvent?.Invoke();
+
         }
         else
         {
@@ -61,6 +61,7 @@ public class NotebookObject : BaseObject
   
         }
         canAction = true;
+        ShowNoteBookEvent?.Invoke();
     }
 
 }

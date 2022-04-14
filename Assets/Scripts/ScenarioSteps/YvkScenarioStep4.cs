@@ -130,8 +130,40 @@ public class YvkScenarioStep4 : ScenarioStep
         }
         else if(number == 16)
         {
+            yvkSoundPlayer.Play85Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text85);
+            StartCoroutine(WaitTillSoundEnds());
             ComputerClickEvent?.Invoke(true);
         }
+        else if (number == 17)
+        {
+            yvkSoundPlayer.Play87Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text87);
+            StartCoroutine(WaitTillSoundEnds());
 
+        }
+        else if (number == 18)
+        {
+            yvkSoundPlayer.Play88Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text88);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        else if (number == 18)
+        {
+            yvkSoundPlayer.Play88Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text88);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        else if (number == 19)
+        {
+            yvkSoundPlayer.StopSoundPlayer();
+            playerCanvasController.SetCanvasText(yvktextHolder.OpenCompActionText);
+            _actionCompButton.SetActive(true);
+            ComputerClickEvent?.Invoke(false);
+        }
+        else if(number ==20)
+        {
+            ComputerClickEvent?.Invoke(true);
+        }
     }
  }

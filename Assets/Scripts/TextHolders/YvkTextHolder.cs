@@ -42,7 +42,9 @@ public class YvkTextHolder
     public string Text82 { get; private set; } = "При данной конфигурации шкафа ЦПУ всегда можно проконтролировать работоспособность всей системы с помощью специального встроенного компьютера, на котором установлен АРМ-ШН.";
     public string Text83 { get; private set; } = "Обратите внимание на выдвижной бок в Шкафу ЦПУ.";
     public string Text84 { get; private set; } = "Давайте выдвинем и посмотрим на АРМ-ШН.";
-
+    public string Text85 { get; private set; } = "На этом АРМе, с помощью специальной программы, можно проконтролировать работоспособность как всей системы целиком, так и любого из блоков.Можно увидеть состояние всех межблочных связей и подключённых РМ-ДСП.";
+    public string Text87 { get; private set; } = "Можно увидеть состояние любого из каналов всех модулей ввода / вывода.";
+    public string Text88 { get; private set; } = "Давайте уберём на место АРМ-ШН.";
     public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";
     public string OpenCompActionText { get; private set; } = "Действие: Нажмите на АРМ-ШН.";
 
