@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NotebookObject : BaseObject
 {
+    public UnityAction ShowNoteBookEvent;
     [SerializeField] private GameObject _noteBook;
     [SerializeField] private GameObject _lid;
+    [SerializeField] private GameObject _actionCompButton;
     public override void StartAction()
     {
         StartCoroutine(ShowNoteBook(true));
@@ -19,6 +22,7 @@ public class NotebookObject : BaseObject
 
     private IEnumerator ShowNoteBook(bool value)
     {
+        _actionCompButton.SetActive(false);
         canAction = false;
         if (value)
         {
@@ -36,6 +40,7 @@ public class NotebookObject : BaseObject
                 x--;
                 yield return new WaitForSeconds(0.01f);
             }
+            ShowNoteBookEvent?.Invoke();
         }
         else
         {

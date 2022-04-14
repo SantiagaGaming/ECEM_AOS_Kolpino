@@ -131,5 +131,9 @@ public class DspSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_18sound);
         currentClip = _18sound;
     }
+    public void StopSoundPlayer()
+    {
+        audioSource.Stop();
+    }
 
 }

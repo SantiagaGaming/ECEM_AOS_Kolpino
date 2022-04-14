@@ -7,7 +7,7 @@ public class SoundPlayer : MonoBehaviour
     protected AudioSource audioSource;
 
     protected AudioClip currentClip;
-    protected void Start()
+    protected void Awake()
     {
         audioSource = GetComponent<AudioSource>();
     }

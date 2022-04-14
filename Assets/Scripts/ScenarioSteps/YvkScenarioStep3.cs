@@ -146,6 +146,7 @@ public class YvkScenarioStep3 : ScenarioStep
         else if(number ==14)
         {
             _comp.RevertAction();
+            EndScenarioStepEvent?.Invoke();
         }
     }
 }

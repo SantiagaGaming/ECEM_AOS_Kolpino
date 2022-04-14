@@ -121,6 +121,7 @@ public class DspScenarioStep : ScenarioStep
         }
         else if(number ==18)
         {
+            dspSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
             _teleporter.TeleportToYvk();
             _talkingManPositionChanger.ChangeToPositionToYvk();

@@ -35,6 +35,15 @@ public class PlayerCanvasViev : MonoBehaviour
     {
         _repeatActionButton.SetActive(value);
     }
+    public void EnableButtons(bool value)
+    {
+        _nextActionButton.SetActive(value);
+        _repeatActionButton.SetActive(value);
+    }
+    public void EnableNextButton(bool value)
+    {
+        _nextActionButton.SetActive(value);
+    }
 
 
 }
