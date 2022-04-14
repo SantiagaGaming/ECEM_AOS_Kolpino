@@ -47,6 +47,7 @@ public class YvkSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _85sound;
     [SerializeField] private AudioClip _87sound;
     [SerializeField] private AudioClip _88sound;
+    [SerializeField] private AudioClip _89sound;
 
     public void PlayBeginSound()
     {
@@ -305,6 +306,12 @@ public class YvkSoundPlayer : SoundPlayer
         audioSource.Stop();
         audioSource.PlayOneShot(_88sound);
         currentClip = _88sound;
+    }
+    public void Play89Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_89sound);
+        currentClip = _89sound;
     }
     public void StopSoundPlayer()
     {

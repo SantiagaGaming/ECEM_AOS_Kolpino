@@ -164,6 +164,7 @@ public class YvkScenarioStep4 : ScenarioStep
         else if(number ==20)
         {
             ComputerClickEvent?.Invoke(true);
+            EndScenarioStepEvent?.Invoke();
         }
     }
  }
