@@ -66,5 +66,29 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text226);
             StartCoroutine(WaitTillSoundEnds());
         }
+        if (number == 10)
+        {
+            yvkSoundPlayer2.Play106_1Sound();
+            playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_1);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 11)
+        {
+            yvkSoundPlayer2.Play106_2Sound();
+            playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_2);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 12)
+        {
+            yvkSoundPlayer2.Play106_3Sound();
+            playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_3);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 13)
+        {
+            yvkSoundPlayer2.Play106_4Sound();
+            playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_4);
+            StartCoroutine(WaitTillSoundEnds());
+        }
     }
 }

@@ -12,6 +12,10 @@ public class YvkTextHolder2
     public string Text224 { get; private set; } = "Первый каркас МБКО";
     public string Text225 { get; private set; } = "Второй каркас МБКО.";
     public string Text226 { get; private set; } = "Третий каркас МБКО.";
+    public string Text106_1 { get; private set; } = "Крайнее левое место в каркасе УСО выделено для установки модуля СБС.";
+    public string Text106_2 { get; private set; } = "Следующие 10 мест отведено для установки модулей МСИ (нумерация – слева на право).";
+    public string Text106_3 { get; private set; } = "Потом 8 мест для установки модулей МВУ (нумерация – справа на лево).";
+    public string Text106_4 { get; private set; } = "И крайнее правое место для установки модуля МИП.";
 
 
 }
