@@ -24,6 +24,11 @@ public class YvkSoundPlayer2 : SoundPlayer
     [SerializeField] private AudioClip _147sound;
     [SerializeField] private AudioClip _148sound;
     [SerializeField] private AudioClip _162sound;
+    [SerializeField] private AudioClip _170sound;
+    [SerializeField] private AudioClip _188sound;
+    [SerializeField] private AudioClip _189sound;
+    [SerializeField] private AudioClip _193sound;
+    [SerializeField] private AudioClip _194sound;
 
     public void Play95Sound()
     {
@@ -144,6 +149,37 @@ public class YvkSoundPlayer2 : SoundPlayer
         audioSource.Stop();
         audioSource.PlayOneShot(_162sound);
         currentClip = _162sound;
+    }
+    public void Play170Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_170sound);
+        currentClip = _170sound;
+    }
+    public void Play188Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_188sound);
+        currentClip = _188sound;
+    }
+    public void Play189Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_189sound);
+        currentClip = _189sound;
+    }
+
+    public void Play193Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_193sound);
+        currentClip = _193sound;
+    }
+    public void Play194Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_194sound);
+        currentClip = _194sound;
     }
 
 }
