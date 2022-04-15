@@ -48,6 +48,28 @@ public class YvkSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _87sound;
     [SerializeField] private AudioClip _88sound;
     [SerializeField] private AudioClip _89sound;
+    [SerializeField] private AudioClip _90_1sound;
+    [SerializeField] private AudioClip _90_2sound;
+    [SerializeField] private AudioClip _90_3sound;
+    [SerializeField] private AudioClip _90_4sound;
+    [SerializeField] private AudioClip _90_5sound;
+    [SerializeField] private AudioClip _93sound;
+    [SerializeField] private AudioClip _94sound;
+    [SerializeField] private AudioClip _208sound;
+    [SerializeField] private AudioClip _209sound;
+    [SerializeField] private AudioClip _210sound;
+    [SerializeField] private AudioClip _211sound;
+    [SerializeField] private AudioClip _212sound;
+    [SerializeField] private AudioClip _213sound;
+    [SerializeField] private AudioClip _214sound;
+    [SerializeField] private AudioClip _215sound;
+    [SerializeField] private AudioClip _216sound;
+    [SerializeField] private AudioClip _217sound;
+    [SerializeField] private AudioClip _218sound;
+    [SerializeField] private AudioClip _219sound;
+    [SerializeField] private AudioClip _220sound;
+
+
 
     public void PlayBeginSound()
     {
@@ -313,6 +335,127 @@ public class YvkSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_89sound);
         currentClip = _89sound;
     }
+    public void Play90_1Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_90_1sound);
+        currentClip = _90_1sound;
+    }
+    public void Play90_2Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_90_2sound);
+        currentClip = _90_2sound;
+    }
+    public void Play90_3Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_90_3sound);
+        currentClip = _90_3sound;
+    }
+    public void Play90_4Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_90_4sound);
+        currentClip = _90_4sound;
+    }
+    public void Play90_5Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_90_5sound);
+        currentClip = _90_5sound;
+    }
+    public void Play93Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_93sound);
+        currentClip = _93sound;
+    }
+    public void Play94Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_94sound);
+        currentClip = _94sound;
+    }
+    public void Play208Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_208sound);
+        currentClip = _208sound;
+    }
+    public void Play209Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_209sound);
+        currentClip = _209sound;
+    }
+    public void Play210Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_210sound);
+        currentClip = _210sound;
+    }
+    public void Play211Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_211sound);
+        currentClip = _211sound;
+    }
+    public void Play212Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_212sound);
+        currentClip = _212sound;
+    }
+    public void Play213Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_213sound);
+        currentClip = _213sound;
+    }
+    public void Play214Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_214sound);
+        currentClip = _214sound;
+    }
+    public void Play215Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_215sound);
+        currentClip = _215sound;
+    }
+    public void Play216Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_216sound);
+        currentClip = _216sound;
+    }
+    public void Play217Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_217sound);
+        currentClip = _217sound;
+    }
+    public void Play218Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_218sound);
+        currentClip = _218sound;
+    }
+    public void Play219Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_219sound);
+        currentClip = _219sound;
+    }
+    public void Play220Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_220sound);
+        currentClip = _220sound;
+    }
+
     public void StopSoundPlayer()
     {
         audioSource.Stop();

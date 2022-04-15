@@ -46,6 +46,28 @@ public class YvkTextHolder
     public string Text87 { get; private set; } = "Можно увидеть состояние любого из каналов всех модулей ввода / вывода.";
     public string Text88 { get; private set; } = "Давайте уберём на место АРМ-ШН.";
     public string Text89 { get; private set; } = "А теперь обратите внимание на Шкафы УСО.";
+    public string Text90_1 { get; private set; } = "В шкафах УСО располагаются модули, с помощью которых осуществляется получение информации о состоянии объектов контроля (МСИ).";
+    public string Text90_2 { get; private set; } = "Управление устройствами СЦБ (МВУ).";
+    public string Text90_3 { get; private set; } = "И платы, которые при необходимости осуществляют аварийное отключение канала управления (МБКО).";
+    public string Text90_4 { get; private set; } = "А также модули связи с ЦПУ (СБС).";
+    public string Text90_5 { get; private set; } = "И Модули питания (МИП).";
+    public string Text93 { get; private set; } = "В системе ЭЦ-ЕМ существует понятие «Триада».";
+    public string Text94 { get; private set; } = "Так называют блоки и модули ввода – вывода расположенные в Трёх каналах, но отвечающие за одни и те же объекты контроля и управления.";
+    public string Text208 { get; private set; } = "Первая «Триада» МСИ.";
+    public string Text209 { get; private set; } = "Вторая «Триада» МСИ.";
+    public string Text210 { get; private set; } = "Третья «Триада» МСИ.";
+    public string Text211 { get; private set; } = "Четвертая «Триада» МСИ.";
+    public string Text212 { get; private set; } = "Пятая «Триада» МСИ.";
+    public string Text213 { get; private set; } = "Шестая «Триада» МСИ.";
+    public string Text214 { get; private set; } = "Седьмая «Триада» МСИ.";
+    public string Text215 { get; private set; } = "Первая «Триада» МВУ.";
+    public string Text216 { get; private set; } = "Вторая «Триада» МВУ.";
+    public string Text217 { get; private set; } = "Третья «Триада» МВУ.";
+    public string Text218 { get; private set; } = "Четвертая «Триада» МВУ.";
+    public string Text219 { get; private set; } = "Пятая «Триада» МВУ.";
+    public string Text220 { get; private set; } = "Шестая «Триада» МВУ.";
+
+
     public string OpenDoorActionText { get; private set; } = "Действие: Откройте шкафы УВК.";
     public string OpenCompActionText { get; private set; } = "Действие: Нажмите на АРМ-ШН.";
 
