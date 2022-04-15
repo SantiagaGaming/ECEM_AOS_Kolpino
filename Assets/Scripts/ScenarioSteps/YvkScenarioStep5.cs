@@ -126,6 +126,11 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text220);
             StartCoroutine(WaitTillSoundEnds());
         }
+        else if(number ==19)
+        {
+            yvkSoundPlayer.StopSoundPlayer();
+            EndScenarioStepEvent?.Invoke();
+        }
 
     }
 }
