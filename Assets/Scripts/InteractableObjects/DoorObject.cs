@@ -25,20 +25,20 @@ public class DoorObject : InteractObject
                 int keyX = 0;
                 while (keyX < 40)
                 {
-                    _key.transform.localPosition -= new Vector3(0, 0, 0.00001f);
+                    _key.transform.localPosition += new Vector3(0.001f, 0,0 );
                     keyX++;
-                    yield return new WaitForSeconds(0.005f);
+                    yield return new WaitForSeconds(0.008f);
                 }
                 int keyXRot = -90;
                 while (keyXRot < 0)
                 {
-                    _key.transform.localRotation = Quaternion.Euler(keyXRot, 270, 0);
+                    _key.transform.localRotation = Quaternion.Euler(keyXRot, 180, 0);
                     keyXRot++;
                     yield return new WaitForSeconds(0.01f);
                 }
 
-            int y = 0;
-            while (y >= -90)
+            int y = 90;
+            while (y >= 0)
             {
                transform.localRotation = Quaternion.Euler(0, y, 0);
                 y--;
@@ -47,8 +47,8 @@ public class DoorObject : InteractObject
         }
         //else
         //{
-        //    int y = -90;
-        //    while (y <= 0)
+        //    int y = 0;
+        //    while (y <= 90)
         //    {
         //        transform.localRotation = Quaternion.Euler(0, y, 0);
         //        y++;
@@ -66,9 +66,9 @@ public class DoorObject : InteractObject
         //int keyX = 40;
         //while (keyX > 0)
         //{
-        //    _key.transform.localPosition += new Vector3(0, 0, 0.00001f);
+        //     _key.transform.localPosition -= new Vector3(0.001f, 0,0 );
         //    keyX--;
-        //    yield return new WaitForSeconds(0.01f);
+        //    yield return new WaitForSeconds(0.008f);
         //}
         //_key.SetActive(false);
     }

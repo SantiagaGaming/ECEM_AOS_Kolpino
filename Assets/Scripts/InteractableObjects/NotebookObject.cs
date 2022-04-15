@@ -29,7 +29,7 @@ public class NotebookObject : BaseObject
             int z = 0;
                 while (z<=35)
             {
-                _noteBook.transform.localPosition += new Vector3(0, 0, 0.01f);
+                _noteBook.transform.localPosition -= new Vector3(0.01f, 0,0 );
                 z++;
                 yield return new WaitForSeconds(0.01f);
             }
@@ -54,7 +54,7 @@ public class NotebookObject : BaseObject
             int z = 35;
             while (z >= 0)
             {
-                _noteBook.transform.localPosition -= new Vector3(0, 0, 0.01f);
+                _noteBook.transform.localPosition += new Vector3(0.01f, 0, 0);
                 z--;
                 yield return new WaitForSeconds(0.01f);
             }
