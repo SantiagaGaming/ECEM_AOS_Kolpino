@@ -222,66 +222,146 @@ public class YvkScenarioStep5 : ScenarioStep
             _mip1.RevertAction();
             _mip2.RevertAction();
             _mip3.RevertAction();
+
+            _msi1.StartAction();
+            _msi2.StartAction();
+            _msi3.StartAction();
         }
         else if (number == 7)
         {
             yvkSoundPlayer.Play209Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text209);
             StartCoroutine(WaitTillSoundEnds());
+
+            _msi4.StartAction();
+            _msi5.StartAction();
+            _msi6.StartAction();
+
+            _msi1.RevertAction();
+            _msi2.RevertAction();
+            _msi3.RevertAction();
         }
         else if (number == 8)
         {
             yvkSoundPlayer.Play210Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text210);
             StartCoroutine(WaitTillSoundEnds());
+
+            _msi7.StartAction();
+            _msi8.StartAction();
+            _msi15.StartAction();
+
+            _msi4.RevertAction();
+            _msi5.RevertAction();
+            _msi6.RevertAction();
         }
         else if (number == 9)
         {
             yvkSoundPlayer.Play211Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text211);
             StartCoroutine(WaitTillSoundEnds());
+
+            _msi10.StartAction();
+            _msi11.StartAction();
+            _msi9.StartAction();
+
+            _msi7.RevertAction();
+            _msi8.RevertAction();
+            _msi15.RevertAction();
         }
         else if (number == 10)
         {
             yvkSoundPlayer.Play212Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text212);
             StartCoroutine(WaitTillSoundEnds());
+
+            _msi13.StartAction();
+            _msi14.StartAction();
+            _msi12.StartAction();
+
+            _msi10.RevertAction();
+            _msi11.RevertAction();
+            _msi9.RevertAction();
         }
         else if (number == 11)
         {
             yvkSoundPlayer.Play213Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text213);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu1.StartAction();
+            _mvu2.StartAction();
+            _mvu3.StartAction();
+
+            _msi13.RevertAction();
+            _msi14.RevertAction();
+            _msi12.RevertAction();
         }
         else if (number == 12)
         {
             yvkSoundPlayer.Play214Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text214);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu4.StartAction();
+            _mvu5.StartAction();
+            _mvu6.StartAction();
+
+            _mvu1.RevertAction();
+            _mvu2.RevertAction();
+            _mvu3.RevertAction();
         }
         else if (number == 13)
         {
             yvkSoundPlayer.Play215Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text215);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu7.StartAction();
+            _mvu8.StartAction();
+            _mvu9.StartAction();
+
+            _mvu4.RevertAction();
+            _mvu5.RevertAction();
+            _mvu6.RevertAction();
         }
         else if (number == 14)
         {
             yvkSoundPlayer.Play216Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text216);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu10.StartAction();
+            _mvu11.StartAction();
+            _mvu12.StartAction();
+
+            _mvu7.RevertAction();
+            _mvu8.RevertAction();
+            _mvu9.RevertAction();
         }
         else if (number == 15)
         {
             yvkSoundPlayer.Play217Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text217);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu13.StartAction();
+            _mvu14.StartAction();
+            _mvu15.StartAction();
+
+            _mvu10.RevertAction();
+            _mvu11.RevertAction();
+            _mvu12.RevertAction();
         }
         else if (number == 16)
         {
             yvkSoundPlayer.Play218Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text218);
             StartCoroutine(WaitTillSoundEnds());
+
+            _mvu13.RevertAction();
+            _mvu14.RevertAction();
+            _mvu15.RevertAction();
         }
         else if (number == 17)
         {
