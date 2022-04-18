@@ -25,6 +25,7 @@ public class OpenDoorController : MonoBehaviour
         if (_doors >= 4)
         {
             AllDoorsOpenedEvent?.Invoke(true);
+            _doors = 0;
         }
           
     }

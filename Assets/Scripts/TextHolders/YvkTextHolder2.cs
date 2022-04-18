@@ -28,4 +28,7 @@ public class YvkTextHolder2
     public string Text193 { get; private set; } = "А сейчас, Давайте Закроем все шкафы УВК.";
     public string Text194 { get; private set; } = "Пойдём в Релейную.";
 
+
+    public string CloseDoorActionText { get; private set; } = "Действие: Закройте шкафы УВК.";
+
 }

@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class YvkScenarioStep6 : ScenarioStep
 {
+    public UnityAction ShowRepeatButtonEvent;
 
     [SerializeField] private BaseObject _usoBody1;
     [SerializeField] private BaseObject _usoBody2;
@@ -72,6 +74,8 @@ public class YvkScenarioStep6 : ScenarioStep
 
     [SerializeField] private BaseObject _shkafKP;
 
+    [SerializeField] private OpenDoorController _openDoorController;
+
 
     protected override void CheckActions(int number)
     {
@@ -81,19 +85,19 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text95);
             StartCoroutine(WaitTillSoundEnds());
         }
-        if (number == 1)
+        else if (number == 1)
         {
             yvkSoundPlayer2.Play97Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text97);
             StartCoroutine(WaitTillSoundEnds());
         }
-        if (number == 2)
+        else if (number == 2)
         {
             yvkSoundPlayer2.Play105_1Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text105_1);
             StartCoroutine(WaitTillSoundEnds());
         }
-        if (number == 3)
+        else if (number == 3)
         {
             yvkSoundPlayer2.Play221Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text221);
@@ -101,7 +105,7 @@ public class YvkScenarioStep6 : ScenarioStep
 
             _usoBody1.StartAction();
         }
-        if (number == 4)
+        else if (number == 4)
         {
             yvkSoundPlayer2.Play222Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text222);
@@ -110,7 +114,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _usoBody2.StartAction();
             _usoBody1.RevertAction();
         }
-        if (number == 5)
+        else if (number == 5)
         {
             yvkSoundPlayer2.Play223Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text223);
@@ -118,8 +122,8 @@ public class YvkScenarioStep6 : ScenarioStep
 
             _usoBody3.StartAction();
             _usoBody2.RevertAction();
-    }
-        if (number == 6)
+        }
+        else if (number == 6)
         {
             yvkSoundPlayer2.Play105_2Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text105_2);
@@ -127,7 +131,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _usoBody3.RevertAction();
 
         }
-        if (number == 7)
+        else if (number == 7)
         {
             yvkSoundPlayer2.Play224Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text224);
@@ -136,7 +140,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbkoBody1.StartAction();
 
         }
-        if (number == 8)
+        else if (number == 8)
         {
             yvkSoundPlayer2.Play225Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text225);
@@ -145,7 +149,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbkoBody2.StartAction();
             _mbkoBody1.RevertAction();
         }
-        if (number == 9)
+        else if (number == 9)
         {
             yvkSoundPlayer2.Play226Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text226);
@@ -155,7 +159,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbkoBody2.RevertAction();
 
         }
-        if (number == 10)
+        else if (number == 10)
         {
             yvkSoundPlayer2.Play106_1Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_1);
@@ -166,7 +170,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _sbs3.StartAction();
             _mbkoBody3.RevertAction();
         }
-        if (number == 11)
+        else if (number == 11)
         {
             yvkSoundPlayer2.Play106_2Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_2);
@@ -191,7 +195,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _msi14.StartAction();
             _msi15.StartAction();
         }
-        if (number == 12)
+        else if (number == 12)
         {
             yvkSoundPlayer2.Play106_3Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_3);
@@ -230,7 +234,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mvu14.StartAction();
             _mvu15.StartAction();
         }
-        if (number == 13)
+        else if (number == 13)
         {
             yvkSoundPlayer2.Play106_4Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text106_4);
@@ -255,7 +259,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mvu14.RevertAction();
             _mvu15.RevertAction();
         }
-        if (number == 14)
+        else if (number == 14)
         {
             yvkSoundPlayer2.Play107_1Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text107_1);
@@ -269,7 +273,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mip3.StartAction();
 
         }
-        if (number == 15)
+        else if (number == 15)
         {
             yvkSoundPlayer2.Play107_2Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text107_2);
@@ -314,7 +318,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mvu14.StartAction();
             _mvu15.StartAction();
         }
-        if (number == 16)
+        else if (number == 16)
         {
             yvkSoundPlayer2.Play107_3Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text107_3);
@@ -369,7 +373,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbko14.StartAction();
             _mbko15.StartAction();
         }
-        if (number == 17)
+        else if (number == 17)
         {
             yvkSoundPlayer2.Play147Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text147);
@@ -390,19 +394,19 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbko14.RevertAction();
             _mbko15.RevertAction();
         }
-        if (number == 18)
+        else if (number == 18)
         {
             yvkSoundPlayer2.Play148Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text148);
             StartCoroutine(WaitTillSoundEnds());
         }
-        if (number == 19)
+        else if (number == 19)
         {
             yvkSoundPlayer2.Play162Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text162);
             StartCoroutine(WaitTillSoundEnds());
         }
-        if (number == 20)
+        else if (number == 20)
         {
             yvkSoundPlayer2.Play170Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text170);
@@ -424,7 +428,7 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbko14.StartAction();
             _mbko15.StartAction();
         }
-        if (number == 21)
+        else if (number == 21)
         {
             yvkSoundPlayer2.Play188Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text188);
@@ -447,25 +451,34 @@ public class YvkScenarioStep6 : ScenarioStep
             _mbko14.RevertAction();
             _mbko15.RevertAction();
         }
-        if (number == 22)
+        else if (number == 22)
         {
             yvkSoundPlayer2.Play189Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text189);
             StartCoroutine(WaitTillSoundEnds());
             _shkafKP.RevertAction();
         }
-        if (number == 23)
+        else if (number == 23)
         {
             yvkSoundPlayer2.Play193Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text193);
             StartCoroutine(WaitTillSoundEnds());
             //TODO: Close Shkafs
         }
-        if (number == 24)
+        else if (number == 24)
+        {
+            playerCanvasController.SetCanvasText(yvkTextHolder2.CloseDoorActionText);
+            _openDoorController.EnableDoorsColliders();
+            playerCanvasController.EnableNextRepeatActionButton(false);
+        }
+
+        else if (number == 25)
         {
             yvkSoundPlayer2.Play194Sound();
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text194);
             StartCoroutine(WaitTillSoundEnds());
+            ShowRepeatButtonEvent?.Invoke();
+            
         }
     }
 }
