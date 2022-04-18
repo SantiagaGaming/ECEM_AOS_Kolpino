@@ -6,6 +6,27 @@ public class YvkScenarioStep5 : ScenarioStep
 {
     [SerializeField] private BaseObject _shkafUCO1;
     [SerializeField] private BaseObject _shkafUCO2;
+
+    [SerializeField] private BaseObject _msi1;
+    [SerializeField] private BaseObject _msi2;
+    [SerializeField] private BaseObject _msi3;
+    [SerializeField] private BaseObject _msi4;
+
+    [SerializeField] private BaseObject _mvu1;
+    [SerializeField] private BaseObject _mvu2;
+    [SerializeField] private BaseObject _mvu3;
+
+    [SerializeField] private BaseObject _mbko1;
+    [SerializeField] private BaseObject _mbko2;
+
+    [SerializeField] private BaseObject _sbs1;
+    [SerializeField] private BaseObject _sbs2;
+    [SerializeField] private BaseObject _sbs3;
+
+    [SerializeField] private BaseObject _mip1;
+    [SerializeField] private BaseObject _mip2;
+    [SerializeField] private BaseObject _mip3;
+
     protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -23,36 +44,67 @@ public class YvkScenarioStep5 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             _shkafUCO1.RevertAction();
             _shkafUCO2.RevertAction();
+            _msi1.StartAction();
+            _msi2.StartAction();
+            _msi3.StartAction();
+            _msi4.StartAction();
         }
         else if(number==2)
         {
               yvkSoundPlayer.Play90_2Sound();
               playerCanvasController.SetCanvasText(yvktextHolder.Text90_2);
               StartCoroutine(WaitTillSoundEnds());
-         }
+            _msi1.RevertAction();
+            _msi2.RevertAction();
+            _msi3.RevertAction();
+            _msi4.RevertAction();
+            _mvu1.StartAction();
+            _mvu2.StartAction();
+            _mvu3.StartAction();
+        }
         else if (number == 3)
         {
             yvkSoundPlayer.Play90_3Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_3);
             StartCoroutine(WaitTillSoundEnds());
+            _mvu1.RevertAction();
+            _mvu2.RevertAction();
+            _mvu3.RevertAction();
+            _mbko1.StartAction();
+            _mbko2.StartAction();
         }
         else if (number == 4)
         {
             yvkSoundPlayer.Play90_4Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_4);
             StartCoroutine(WaitTillSoundEnds());
+            _mbko1.RevertAction();
+            _mbko2.RevertAction();
+            _sbs1.StartAction();
+            _sbs2.StartAction();
+            _sbs3.StartAction();
+
         }
         else if (number == 5)
         {
             yvkSoundPlayer.Play90_5Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_5);
             StartCoroutine(WaitTillSoundEnds());
+            _sbs1.RevertAction();
+            _sbs2.RevertAction();
+            _sbs3.RevertAction();
+            _mip1.StartAction();
+            _mip2.StartAction();
+            _mip3.StartAction();
         }
         else if (number == 6)
         {
             yvkSoundPlayer.Play208Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text208);
             StartCoroutine(WaitTillSoundEnds());
+            _mip1.RevertAction();
+            _mip2.RevertAction();
+            _mip3.RevertAction();
         }
         else if (number == 7)
         {
