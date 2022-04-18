@@ -11,13 +11,52 @@ public class YvkScenarioStep5 : ScenarioStep
     [SerializeField] private BaseObject _msi2;
     [SerializeField] private BaseObject _msi3;
     [SerializeField] private BaseObject _msi4;
+    [SerializeField] private BaseObject _msi5;
+    [SerializeField] private BaseObject _msi6;
+    [SerializeField] private BaseObject _msi7;
+    [SerializeField] private BaseObject _msi8;
+    [SerializeField] private BaseObject _msi9;
+    [SerializeField] private BaseObject _msi10;
+    [SerializeField] private BaseObject _msi11;
+    [SerializeField] private BaseObject _msi12;
+    [SerializeField] private BaseObject _msi13;
+    [SerializeField] private BaseObject _msi14;
+    [SerializeField] private BaseObject _msi15;
+
 
     [SerializeField] private BaseObject _mvu1;
     [SerializeField] private BaseObject _mvu2;
     [SerializeField] private BaseObject _mvu3;
+    [SerializeField] private BaseObject _mvu4;
+    [SerializeField] private BaseObject _mvu5;
+    [SerializeField] private BaseObject _mvu6;
+    [SerializeField] private BaseObject _mvu7;
+    [SerializeField] private BaseObject _mvu8;
+    [SerializeField] private BaseObject _mvu9;
+    [SerializeField] private BaseObject _mvu10;
+    [SerializeField] private BaseObject _mvu11;
+    [SerializeField] private BaseObject _mvu12;
+    [SerializeField] private BaseObject _mvu13;
+    [SerializeField] private BaseObject _mvu14;
+    [SerializeField] private BaseObject _mvu15;
+
 
     [SerializeField] private BaseObject _mbko1;
     [SerializeField] private BaseObject _mbko2;
+    [SerializeField] private BaseObject _mbko3;
+    [SerializeField] private BaseObject _mbko4;
+    [SerializeField] private BaseObject _mbko5;
+    [SerializeField] private BaseObject _mbko6;
+    [SerializeField] private BaseObject _mbko7;
+    [SerializeField] private BaseObject _mbko8;
+    [SerializeField] private BaseObject _mbko9;
+    [SerializeField] private BaseObject _mbko10;
+    [SerializeField] private BaseObject _mbko11;
+    [SerializeField] private BaseObject _mbko12;
+    [SerializeField] private BaseObject _mbko13;
+    [SerializeField] private BaseObject _mbko14;
+    [SerializeField] private BaseObject _mbko15;
+
 
     [SerializeField] private BaseObject _sbs1;
     [SerializeField] private BaseObject _sbs2;
@@ -48,6 +87,17 @@ public class YvkScenarioStep5 : ScenarioStep
             _msi2.StartAction();
             _msi3.StartAction();
             _msi4.StartAction();
+            _msi5.StartAction();
+            _msi6.StartAction();
+            _msi7.StartAction();
+            _msi8.StartAction();
+            _msi9.StartAction();
+            _msi10.StartAction();
+            _msi11.StartAction();
+            _msi12.StartAction();
+            _msi13.StartAction();
+            _msi14.StartAction();
+            _msi15.StartAction();
         }
         else if(number==2)
         {
@@ -58,9 +108,35 @@ public class YvkScenarioStep5 : ScenarioStep
             _msi2.RevertAction();
             _msi3.RevertAction();
             _msi4.RevertAction();
+            _msi4.RevertAction();
+            _msi5.RevertAction();
+            _msi6.RevertAction();
+            _msi7.RevertAction();
+            _msi8.RevertAction();
+            _msi9.RevertAction();
+            _msi10.RevertAction();
+            _msi11.RevertAction();
+            _msi12.RevertAction();
+            _msi13.RevertAction();
+            _msi14.RevertAction();
+            _msi15.RevertAction();
+
             _mvu1.StartAction();
             _mvu2.StartAction();
             _mvu3.StartAction();
+            _mvu4.StartAction();
+            _mvu5.StartAction();
+            _mvu6.StartAction();
+            _mvu7.StartAction();
+            _mvu8.StartAction();
+            _mvu9.StartAction();
+            _mvu10.StartAction();
+            _mvu11.StartAction();
+            _mvu12.StartAction();
+            _mvu13.StartAction();
+            _mvu14.StartAction();
+            _mvu15.StartAction();
+
         }
         else if (number == 3)
         {
@@ -70,8 +146,35 @@ public class YvkScenarioStep5 : ScenarioStep
             _mvu1.RevertAction();
             _mvu2.RevertAction();
             _mvu3.RevertAction();
+            _mvu4.RevertAction();
+            _mvu5.RevertAction();
+            _mvu6.RevertAction();
+            _mvu7.RevertAction();
+            _mvu8.RevertAction();
+            _mvu9.RevertAction();
+            _mvu10.RevertAction();
+            _mvu11.RevertAction();
+            _mvu12.RevertAction();
+            _mvu13.RevertAction();
+            _mvu14.RevertAction();
+            _mvu15.RevertAction();
+
             _mbko1.StartAction();
             _mbko2.StartAction();
+            _mbko3.StartAction();
+            _mbko4.StartAction();
+            _mbko5.StartAction();
+            _mbko6.StartAction();
+            _mbko7.StartAction();
+            _mbko8.StartAction();
+            _mbko9.StartAction();
+            _mbko10.StartAction();
+            _mbko11.StartAction();
+            _mbko12.StartAction();
+            _mbko13.StartAction();
+            _mbko14.StartAction();
+            _mbko15.StartAction();
+
         }
         else if (number == 4)
         {
@@ -80,6 +183,20 @@ public class YvkScenarioStep5 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             _mbko1.RevertAction();
             _mbko2.RevertAction();
+            _mbko3.RevertAction();
+            _mbko4.RevertAction();
+            _mbko5.RevertAction();
+            _mbko6.RevertAction();
+            _mbko7.RevertAction();
+            _mbko8.RevertAction();
+            _mbko9.RevertAction();
+            _mbko10.RevertAction();
+            _mbko11.RevertAction();
+            _mbko12.RevertAction();
+            _mbko13.RevertAction();
+            _mbko14.RevertAction();
+            _mbko15.RevertAction();
+
             _sbs1.StartAction();
             _sbs2.StartAction();
             _sbs3.StartAction();
