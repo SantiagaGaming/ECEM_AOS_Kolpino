@@ -289,9 +289,9 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text215);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu1.StartAction();
-            _mvu2.StartAction();
-            _mvu3.StartAction();
+            _mvu13.StartAction();
+            _mvu14.StartAction();
+            _mvu15.StartAction();
 
             _msi13.RevertAction();
             _msi14.RevertAction();
@@ -303,13 +303,13 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text216);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu4.StartAction();
-            _mvu5.StartAction();
-            _mvu6.StartAction();
+            _mvu10.StartAction();
+            _mvu11.StartAction();
+            _mvu12.StartAction();
 
-            _mvu1.RevertAction();
-            _mvu2.RevertAction();
-            _mvu3.RevertAction();
+            _mvu13.RevertAction();
+            _mvu14.RevertAction();
+            _mvu15.RevertAction();
         }
         else if (number == 13)
         {
@@ -321,9 +321,9 @@ public class YvkScenarioStep5 : ScenarioStep
             _mvu8.StartAction();
             _mvu9.StartAction();
 
-            _mvu4.RevertAction();
-            _mvu5.RevertAction();
-            _mvu6.RevertAction();
+            _mvu10.RevertAction();
+            _mvu11.RevertAction();
+            _mvu12.RevertAction();
         }
         else if (number == 14)
         {
@@ -331,9 +331,9 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text218);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu10.StartAction();
-            _mvu11.StartAction();
-            _mvu12.StartAction();
+            _mvu4.StartAction();
+            _mvu5.StartAction();
+            _mvu6.StartAction();
 
             _mvu7.RevertAction();
             _mvu8.RevertAction();
@@ -345,19 +345,19 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text219);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu13.StartAction();
-            _mvu14.StartAction();
-            _mvu15.StartAction();
+            _mvu1.StartAction();
+            _mvu2.StartAction();
+            _mvu3.StartAction();
 
-            _mvu10.RevertAction();
-            _mvu11.RevertAction();
-            _mvu12.RevertAction();
+            _mvu4.RevertAction();
+            _mvu5.RevertAction();
+            _mvu6.RevertAction();
         }
         else if (number == 16)
         {
-            _mvu13.RevertAction();
-            _mvu14.RevertAction();
-            _mvu15.RevertAction();
+            _mvu1.RevertAction();
+            _mvu2.RevertAction();
+            _mvu3.RevertAction();
 
             yvkSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
