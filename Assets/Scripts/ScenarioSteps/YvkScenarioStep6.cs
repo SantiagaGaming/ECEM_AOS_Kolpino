@@ -76,6 +76,10 @@ public class YvkScenarioStep6 : ScenarioStep
 
     [SerializeField] private OpenDoorController _openDoorController;
 
+    [SerializeField] private TalkingManPositionChanger _talkingManPositionChanger;
+    [SerializeField] private CanvasPositionChanger _canvasPostionChanger;
+    [SerializeField] private Teleporter _teleporter;
+
 
     protected override void CheckActions(int number)
     {
@@ -479,6 +483,14 @@ public class YvkScenarioStep6 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ShowRepeatButtonEvent?.Invoke();
             
+        }
+        else if(number ==26)
+        {
+                dspSoundPlayer.StopSoundPlayer();
+                _teleporter.TeleportToRele();
+                _talkingManPositionChanger.ChangeToPositionToRele();
+                _canvasPostionChanger.ChangeCanvasPositionToRele();
+                EndScenarioStepEvent?.Invoke();
         }
     }
 }

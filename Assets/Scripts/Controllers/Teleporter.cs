@@ -7,11 +7,17 @@ using AosSdk.Core.Interfaces;
 public class Teleporter : MonoBehaviour
 {
     [SerializeField] private Transform _yvkPosition;
+    [SerializeField] private Transform _relePosition;
     [SerializeField] private CameraFlash _cameraFlash;
 
     public void TeleportToYvk()
     {
         Player.Instance.TeleportTo(_yvkPosition);
+        _cameraFlash.CameraFlashStart();
+    }
+    public void TeleportToRele()
+    {
+        Player.Instance.TeleportTo(_relePosition);
         _cameraFlash.CameraFlashStart();
     }
 }

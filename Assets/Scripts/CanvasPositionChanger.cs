@@ -7,6 +7,7 @@ public class CanvasPositionChanger : MonoBehaviour
     [SerializeField] private Transform _talkingManTransform;
     [SerializeField] private Transform _yvkPosition;
     [SerializeField] private Transform _dspPosition;
+    [SerializeField] private Transform _relePosition;
 
     public void ChangeCanvasPostitionToTalkingMan()
     {
@@ -22,6 +23,11 @@ public class CanvasPositionChanger : MonoBehaviour
     {
         transform.position = _dspPosition.position;
         transform.rotation = _dspPosition.rotation;
+    }
+    public void ChangeCanvasPositionToRele()
+    {
+        transform.position = _relePosition.position;
+        transform.rotation = _relePosition.rotation;
     }
 
 }

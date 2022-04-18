@@ -6,6 +6,8 @@ public class TalkingManPositionChanger : MonoBehaviour
 {
     [SerializeField] private Transform _dspPosition;
     [SerializeField] private Transform _yvkPosition;
+    [SerializeField] private Transform _relePosition;
+
 
     public void ChangeToDspPosition()
     {
@@ -16,5 +18,10 @@ public class TalkingManPositionChanger : MonoBehaviour
     {
         transform.position = _yvkPosition.position;
         transform.rotation = _yvkPosition.rotation;
+    }
+    public void ChangeToPositionToRele()
+    {
+        transform.position = _relePosition.position;
+        transform.rotation = _relePosition.rotation;
     }
 }
