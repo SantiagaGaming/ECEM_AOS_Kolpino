@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class PlayerCanvasViev : MonoBehaviour
+public class PlayerCanvasView : MonoBehaviour
 {
     public UnityAction TapNextActionButtonEvent;
     public UnityAction TapRepeatActionButtonEvent;

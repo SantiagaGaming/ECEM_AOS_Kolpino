@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class NextButton : BaseButtton
 {
-    [SerializeField] private PlayerCanvasViev _playerCanvasViev;
+    [SerializeField] private PlayerCanvasView _playerCanvasViev;
     public override void OnClicked(InteractHand interactHand)
     {
         _playerCanvasViev.TapNextActionButtonEvent?.Invoke();

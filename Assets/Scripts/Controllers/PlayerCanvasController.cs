@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCanvasController : MonoBehaviour
 {
-    [SerializeField] private PlayerCanvasViev _viev;
+    [SerializeField] private PlayerCanvasView _viev;
     [SerializeField] private ScenarioStepController _scnerioStepsController;
     [SerializeField] private TalkingMan _talkingMan;
     [SerializeField] private OpenDoorController _openDoorController;
