@@ -4,68 +4,6 @@ using UnityEngine;
 
 public class YvkScenarioStep5 : ScenarioStep
 {
-    [SerializeField] private BaseObject _shkafUCO1;
-    [SerializeField] private BaseObject _shkafUCO2;
-
-    [SerializeField] private BaseObject _msi1;
-    [SerializeField] private BaseObject _msi2;
-    [SerializeField] private BaseObject _msi3;
-    [SerializeField] private BaseObject _msi4;
-    [SerializeField] private BaseObject _msi5;
-    [SerializeField] private BaseObject _msi6;
-    [SerializeField] private BaseObject _msi7;
-    [SerializeField] private BaseObject _msi8;
-    [SerializeField] private BaseObject _msi9;
-    [SerializeField] private BaseObject _msi10;
-    [SerializeField] private BaseObject _msi11;
-    [SerializeField] private BaseObject _msi12;
-    [SerializeField] private BaseObject _msi13;
-    [SerializeField] private BaseObject _msi14;
-    [SerializeField] private BaseObject _msi15;
-
-
-    [SerializeField] private BaseObject _mvu1;
-    [SerializeField] private BaseObject _mvu2;
-    [SerializeField] private BaseObject _mvu3;
-    [SerializeField] private BaseObject _mvu4;
-    [SerializeField] private BaseObject _mvu5;
-    [SerializeField] private BaseObject _mvu6;
-    [SerializeField] private BaseObject _mvu7;
-    [SerializeField] private BaseObject _mvu8;
-    [SerializeField] private BaseObject _mvu9;
-    [SerializeField] private BaseObject _mvu10;
-    [SerializeField] private BaseObject _mvu11;
-    [SerializeField] private BaseObject _mvu12;
-    [SerializeField] private BaseObject _mvu13;
-    [SerializeField] private BaseObject _mvu14;
-    [SerializeField] private BaseObject _mvu15;
-
-
-    [SerializeField] private BaseObject _mbko1;
-    [SerializeField] private BaseObject _mbko2;
-    [SerializeField] private BaseObject _mbko3;
-    [SerializeField] private BaseObject _mbko4;
-    [SerializeField] private BaseObject _mbko5;
-    [SerializeField] private BaseObject _mbko6;
-    [SerializeField] private BaseObject _mbko7;
-    [SerializeField] private BaseObject _mbko8;
-    [SerializeField] private BaseObject _mbko9;
-    [SerializeField] private BaseObject _mbko10;
-    [SerializeField] private BaseObject _mbko11;
-    [SerializeField] private BaseObject _mbko12;
-    [SerializeField] private BaseObject _mbko13;
-    [SerializeField] private BaseObject _mbko14;
-    [SerializeField] private BaseObject _mbko15;
-
-
-    [SerializeField] private BaseObject _sbs1;
-    [SerializeField] private BaseObject _sbs2;
-    [SerializeField] private BaseObject _sbs3;
-
-    [SerializeField] private BaseObject _mip1;
-    [SerializeField] private BaseObject _mip2;
-    [SerializeField] private BaseObject _mip3;
-
     protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -73,107 +11,107 @@ public class YvkScenarioStep5 : ScenarioStep
             yvkSoundPlayer.Play89Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text89);
             StartCoroutine(WaitTillSoundEnds());
-            _shkafUCO1.StartAction();
-            _shkafUCO2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright2").StartAction();
         }
         else if(number==1)
         {
             yvkSoundPlayer.Play90_1Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_1);
             StartCoroutine(WaitTillSoundEnds());
-            _shkafUCO1.RevertAction();
-            _shkafUCO2.RevertAction();
-            _msi1.StartAction();
-            _msi2.StartAction();
-            _msi3.StartAction();
-            _msi4.StartAction();
-            _msi5.StartAction();
-            _msi6.StartAction();
-            _msi7.StartAction();
-            _msi8.StartAction();
-            _msi9.StartAction();
-            _msi10.StartAction();
-            _msi11.StartAction();
-            _msi12.StartAction();
-            _msi13.StartAction();
-            _msi14.StartAction();
-            _msi15.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright2").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").StartAction();
         }
         else if(number==2)
         {
               yvkSoundPlayer.Play90_2Sound();
               playerCanvasController.SetCanvasText(yvktextHolder.Text90_2);
               StartCoroutine(WaitTillSoundEnds());
-            _msi1.RevertAction();
-            _msi2.RevertAction();
-            _msi3.RevertAction();
-            _msi4.RevertAction();
-            _msi4.RevertAction();
-            _msi5.RevertAction();
-            _msi6.RevertAction();
-            _msi7.RevertAction();
-            _msi8.RevertAction();
-            _msi9.RevertAction();
-            _msi10.RevertAction();
-            _msi11.RevertAction();
-            _msi12.RevertAction();
-            _msi13.RevertAction();
-            _msi14.RevertAction();
-            _msi15.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").RevertAction();
 
-            _mvu1.StartAction();
-            _mvu2.StartAction();
-            _mvu3.StartAction();
-            _mvu4.StartAction();
-            _mvu5.StartAction();
-            _mvu6.StartAction();
-            _mvu7.StartAction();
-            _mvu8.StartAction();
-            _mvu9.StartAction();
-            _mvu10.StartAction();
-            _mvu11.StartAction();
-            _mvu12.StartAction();
-            _mvu13.StartAction();
-            _mvu14.StartAction();
-            _mvu15.StartAction();
-
-        }
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").StartAction();
+       }
         else if (number == 3)
         {
             yvkSoundPlayer.Play90_3Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_3);
             StartCoroutine(WaitTillSoundEnds());
-            _mvu1.RevertAction();
-            _mvu2.RevertAction();
-            _mvu3.RevertAction();
-            _mvu4.RevertAction();
-            _mvu5.RevertAction();
-            _mvu6.RevertAction();
-            _mvu7.RevertAction();
-            _mvu8.RevertAction();
-            _mvu9.RevertAction();
-            _mvu10.RevertAction();
-            _mvu11.RevertAction();
-            _mvu12.RevertAction();
-            _mvu13.RevertAction();
-            _mvu14.RevertAction();
-            _mvu15.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").RevertAction();
 
-            _mbko1.StartAction();
-            _mbko2.StartAction();
-            _mbko3.StartAction();
-            _mbko4.StartAction();
-            _mbko5.StartAction();
-            _mbko6.StartAction();
-            _mbko7.StartAction();
-            _mbko8.StartAction();
-            _mbko9.StartAction();
-            _mbko10.StartAction();
-            _mbko11.StartAction();
-            _mbko12.StartAction();
-            _mbko13.StartAction();
-            _mbko14.StartAction();
-            _mbko15.StartAction();
+  
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko9").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko15").StartAction();
 
         }
         else if (number == 4)
@@ -181,51 +119,53 @@ public class YvkScenarioStep5 : ScenarioStep
             yvkSoundPlayer.Play90_4Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_4);
             StartCoroutine(WaitTillSoundEnds());
-            _mbko1.RevertAction();
-            _mbko2.RevertAction();
-            _mbko3.RevertAction();
-            _mbko4.RevertAction();
-            _mbko5.RevertAction();
-            _mbko6.RevertAction();
-            _mbko7.RevertAction();
-            _mbko8.RevertAction();
-            _mbko9.RevertAction();
-            _mbko10.RevertAction();
-            _mbko11.RevertAction();
-            _mbko12.RevertAction();
-            _mbko13.RevertAction();
-            _mbko14.RevertAction();
-            _mbko15.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko6").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko9").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMbko15").RevertAction();
 
-            _sbs1.StartAction();
-            _sbs2.StartAction();
-            _sbs3.StartAction();
-
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs3").StartAction();
         }
         else if (number == 5)
         {
             yvkSoundPlayer.Play90_5Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_5);
             StartCoroutine(WaitTillSoundEnds());
-            _sbs1.RevertAction();
-            _sbs2.RevertAction();
-            _sbs3.RevertAction();
-            _mip1.StartAction();
-            _mip2.StartAction();
-            _mip3.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs3").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip3").StartAction();
         }
         else if (number == 6)
         {
             yvkSoundPlayer.Play208Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text208);
             StartCoroutine(WaitTillSoundEnds());
-            _mip1.RevertAction();
-            _mip2.RevertAction();
-            _mip3.RevertAction();
 
-            _msi1.StartAction();
-            _msi2.StartAction();
-            _msi3.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip3").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").StartAction();
+
         }
         else if (number == 7)
         {
@@ -233,27 +173,27 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text209);
             StartCoroutine(WaitTillSoundEnds());
 
-            _msi4.StartAction();
-            _msi5.StartAction();
-            _msi6.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").RevertAction();
 
-            _msi1.RevertAction();
-            _msi2.RevertAction();
-            _msi3.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").StartAction();
+
         }
         else if (number == 8)
         {
             yvkSoundPlayer.Play210Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text210);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").RevertAction();
 
-            _msi7.StartAction();
-            _msi8.StartAction();
-            _msi15.StartAction();
-
-            _msi4.RevertAction();
-            _msi5.RevertAction();
-            _msi6.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").StartAction();
         }
         else if (number == 9)
         {
@@ -261,13 +201,13 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text211);
             StartCoroutine(WaitTillSoundEnds());
 
-            _msi10.StartAction();
-            _msi11.StartAction();
-            _msi9.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").RevertAction();
 
-            _msi7.RevertAction();
-            _msi8.RevertAction();
-            _msi15.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").StartAction();
         }
         else if (number == 10)
         {
@@ -275,13 +215,14 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text212);
             StartCoroutine(WaitTillSoundEnds());
 
-            _msi13.StartAction();
-            _msi14.StartAction();
-            _msi12.StartAction();
 
-            _msi10.RevertAction();
-            _msi11.RevertAction();
-            _msi9.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").StartAction();
         }
         else if (number == 11)
         {
@@ -289,41 +230,39 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text215);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu13.StartAction();
-            _mvu14.StartAction();
-            _mvu15.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").RevertAction();
 
-            _msi13.RevertAction();
-            _msi14.RevertAction();
-            _msi12.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").StartAction();
         }
         else if (number == 12)
         {
             yvkSoundPlayer.Play216Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text216);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").RevertAction();
 
-            _mvu10.StartAction();
-            _mvu11.StartAction();
-            _mvu12.StartAction();
-
-            _mvu13.RevertAction();
-            _mvu14.RevertAction();
-            _mvu15.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").StartAction();
         }
         else if (number == 13)
         {
             yvkSoundPlayer.Play217Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text217);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").RevertAction();
 
-            _mvu7.StartAction();
-            _mvu8.StartAction();
-            _mvu9.StartAction();
-
-            _mvu10.RevertAction();
-            _mvu11.RevertAction();
-            _mvu12.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").StartAction();
         }
         else if (number == 14)
         {
@@ -331,13 +270,14 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text218);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu4.StartAction();
-            _mvu5.StartAction();
-            _mvu6.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").RevertAction();
 
-            _mvu7.RevertAction();
-            _mvu8.RevertAction();
-            _mvu9.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").StartAction();
+
         }
         else if (number == 15)
         {
@@ -345,19 +285,21 @@ public class YvkScenarioStep5 : ScenarioStep
             playerCanvasController.SetCanvasText(yvktextHolder.Text219);
             StartCoroutine(WaitTillSoundEnds());
 
-            _mvu1.StartAction();
-            _mvu2.StartAction();
-            _mvu3.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").RevertAction();
 
-            _mvu4.RevertAction();
-            _mvu5.RevertAction();
-            _mvu6.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").StartAction();
+
         }
         else if (number == 16)
         {
-            _mvu1.RevertAction();
-            _mvu2.RevertAction();
-            _mvu3.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").RevertAction();
+
 
             yvkSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();

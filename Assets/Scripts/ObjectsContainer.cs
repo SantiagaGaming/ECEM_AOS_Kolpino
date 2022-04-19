@@ -7,8 +7,8 @@ public class ObjectsContainer : MonoBehaviour
 {
     public static ObjectsContainer Instance;
 
-    [SerializeField] private List<BaseObject> _baseObjects = new List<BaseObject>();
-    [SerializeField] private List<InteractObject> _interactObjects = new List<InteractObject>();
+   private List<BaseObject> _baseObjects = new List<BaseObject>();
+   private List<InteractObject> _interactObjects = new List<InteractObject>();
     private ObjectsContainer(){}
 
     private void Awake()
@@ -32,6 +32,14 @@ public class ObjectsContainer : MonoBehaviour
             return tempObject;
         else
             return null;
+    }
+    public void AddBaseObject(BaseObject obj)
+    {
+        _baseObjects.Add(obj);
+    }
+    public void AddInteractObject(InteractObject obj)
+    {
+        _interactObjects.Add(obj);
     }
 
 }

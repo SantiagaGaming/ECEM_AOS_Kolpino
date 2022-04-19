@@ -21,6 +21,7 @@ public class InteractObject : MonoBehaviour ,IClickAble, IHoverAble
         _showObjectColor = _baseObjectColor * 1.5f;
         if (GetComponent<Collider>())
             GetComponent<Collider>().enabled = false;
+        ObjectsContainer.Instance.AddInteractObject(this);
     }
     public void ActivateInteraction(bool value)
     {

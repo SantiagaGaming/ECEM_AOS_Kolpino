@@ -8,7 +8,10 @@ public class BaseObject : MonoBehaviour
     protected bool canAction = true;
 
     [SerializeField] private string _name;
-
+    protected virtual void Start()
+    {
+        ObjectsContainer.Instance.AddBaseObject(this);
+    }
     public virtual void StartAction()
     {
 
