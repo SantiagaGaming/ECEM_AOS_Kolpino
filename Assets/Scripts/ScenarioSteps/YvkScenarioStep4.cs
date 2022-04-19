@@ -6,15 +6,6 @@ using UnityEngine.Events;
 public class YvkScenarioStep4 : ScenarioStep
 {
     public UnityAction <bool> ComputerClickEvent;
-    [SerializeField] private BaseObject _scpy1;
-    [SerializeField] private BaseObject _scpy2;
-    [SerializeField] private BaseObject _scpy3;
-
-    [SerializeField] private BaseObject _mip1;
-    [SerializeField] private BaseObject _mip2;
-    [SerializeField] private BaseObject _mip3;
-
-    [SerializeField] private BaseObject _comp;
     [SerializeField] private GameObject _actionCompButton;
     protected override void CheckActions(int number)
     {
@@ -35,30 +26,30 @@ public class YvkScenarioStep4 : ScenarioStep
             yvkSoundPlayer.Play205Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text205);
             StartCoroutine(WaitTillSoundEnds());
-            _scpy1.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").StartAction();
         }
         else if (number == 3)
         {
             yvkSoundPlayer.Play206Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text206);
             StartCoroutine(WaitTillSoundEnds());
-            _scpy1.RevertAction();
-            _scpy2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").StartAction();
         }
         else if (number == 4)
         {
             yvkSoundPlayer.Play207Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text207);
             StartCoroutine(WaitTillSoundEnds());
-            _scpy2.RevertAction();
-            _scpy3.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").StartAction();
         }
         else if (number == 5)
         {
             yvkSoundPlayer.Play59Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text59);
             StartCoroutine(WaitTillSoundEnds());
-            _scpy3.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").RevertAction();
         }
         else if (number == 6)
         {
@@ -83,37 +74,37 @@ public class YvkScenarioStep4 : ScenarioStep
             yvkSoundPlayer.Play205Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text205);
             StartCoroutine(WaitTillSoundEnds());
-            _mip1.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").StartAction();
         }
         else if (number == 10)
         {
             yvkSoundPlayer.Play206Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text206);
             StartCoroutine(WaitTillSoundEnds());
-            _mip1.RevertAction();
-            _mip2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").StartAction();
         }
         else if (number == 11)
         {
             yvkSoundPlayer.Play207Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text207);
             StartCoroutine(WaitTillSoundEnds());
-            _mip2.RevertAction();
-            _mip3.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").StartAction();
         }
         else if (number == 12)
         {
             yvkSoundPlayer.Play82Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text82);
             StartCoroutine(WaitTillSoundEnds());
-            _mip3.RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").RevertAction();
         }
         else if (number == 13)
         {
             yvkSoundPlayer.Play83Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text83);
             StartCoroutine(WaitTillSoundEnds());
-            _comp.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuCompBright").StartAction();
         }
         else if (number == 14)
         {
@@ -163,6 +154,7 @@ public class YvkScenarioStep4 : ScenarioStep
         }
         else if(number ==20)
         {
+            ObjectsContainer.Instance.TryGetBaseObject("cpuCompBright").RevertAction();
             ComputerClickEvent?.Invoke(true);
             EndScenarioStepEvent?.Invoke();
         }
