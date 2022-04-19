@@ -7,6 +7,8 @@ public class BaseObject : MonoBehaviour
     protected bool action = true;
     protected bool canAction = true;
 
+    [SerializeField] private string _name;
+
     public virtual void StartAction()
     {
 
@@ -31,5 +33,9 @@ public class BaseObject : MonoBehaviour
                 RevertAction();
             }
         }
+    }
+    public string GetBaseObjectName()
+    {
+        return _name;
     }
 }

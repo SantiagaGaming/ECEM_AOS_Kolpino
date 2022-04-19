@@ -11,6 +11,8 @@ public class InteractObject : MonoBehaviour ,IClickAble, IHoverAble
     protected Color _showObjectColor;
     protected Color _baseObjectColor;
 
+    [SerializeField] private string _name;
+
     public bool IsHoverable { get; set; } = true;
     public bool IsClickable { get; set; } = true;
     protected void Start()
@@ -34,6 +36,11 @@ public class InteractObject : MonoBehaviour ,IClickAble, IHoverAble
     public virtual void StartObjectAction()
     {
         
+    }
+
+    public string GetInteractObjectName()
+    {
+        return _name;
     }
 
     public void OnHoverIn(InteractHand interactHand)

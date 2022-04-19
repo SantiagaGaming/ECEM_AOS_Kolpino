@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class YvkScenarioStep2 : ScenarioStep
 {
-    [SerializeField] private BaseObject _shkafCPU;
-    [SerializeField] private BaseObject _shkafUCO1;
-    [SerializeField] private BaseObject _shkafUCO2;
-    [SerializeField] private BaseObject _shkafCross1;
-    [SerializeField] private BaseObject _shkafCross2;
-    [SerializeField] private BaseObject _lamp1;
-    [SerializeField] private BaseObject _lamp2;
-
    protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -24,36 +16,35 @@ public class YvkScenarioStep2 : ScenarioStep
         {
             yvkSoundPlayer.Play16Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text16);
-            _shkafCPU.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuDoorBright1").StartAction();
             StartCoroutine(WaitTillSoundEnds());
-
         }
         else if (number == 2)
         {
             yvkSoundPlayer.Play17Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text17);
-            _shkafCPU.RevertAction();
-            _shkafUCO1.StartAction();
-            _shkafUCO2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("cpuDoorBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ucoDoorBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ucoDoorBright2").StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 3)
         {
             yvkSoundPlayer.Play18Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text18);
-            _shkafUCO1.RevertAction();
-            _shkafUCO2.RevertAction();
-            _shkafCross1.StartAction();
-            _shkafCross2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ucoDoorBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ucoDoorBright2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("crossDoorBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("crossDoorBright2").StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 4)
         {
             yvkSoundPlayer.Play19Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text19);
-            _shkafCross1.RevertAction();
-            _shkafCross2.RevertAction();
-             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("crossDoorBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("crossDoorBright2").RevertAction();
+            StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 5)
         {
@@ -71,8 +62,8 @@ public class YvkScenarioStep2 : ScenarioStep
         {
             yvkSoundPlayer.Play22Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text22);
-            _lamp1.StartAction();
-            _lamp2.StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
 
@@ -80,9 +71,9 @@ public class YvkScenarioStep2 : ScenarioStep
         {
             yvkSoundPlayer.Play23Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text23);
-            _lamp1.RevertAction();
-            _lamp2.RevertAction();
-               StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").RevertAction();
+            StartCoroutine(WaitTillSoundEnds());
         }
         else if (number == 9)
         {
