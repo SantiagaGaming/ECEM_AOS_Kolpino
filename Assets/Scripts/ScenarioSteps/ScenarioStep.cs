@@ -12,10 +12,12 @@ public abstract class ScenarioStep : MonoBehaviour
     protected YvkSoundPlayer yvkSoundPlayer;
     protected YvkSoundPlayer2 yvkSoundPlayer2;
     protected DspSoundPlayer dspSoundPlayer;
+    protected ReleSoundPlayer releSoundPlayer;
 
     protected YvkTextHolder yvktextHolder = new YvkTextHolder();
     protected DspTextHolder dspTextHolder = new DspTextHolder();
     protected YvkTextHolder2 yvkTextHolder2 = new YvkTextHolder2();
+    protected ReleTextHolder releTextHolder = new ReleTextHolder();
     protected int action;
 
     protected void Awake()
@@ -23,6 +25,7 @@ public abstract class ScenarioStep : MonoBehaviour
         yvkSoundPlayer = FindObjectOfType<YvkSoundPlayer>();
         yvkSoundPlayer2 = FindObjectOfType<YvkSoundPlayer2>();
         dspSoundPlayer = FindObjectOfType<DspSoundPlayer>();
+        releSoundPlayer = FindObjectOfType<ReleSoundPlayer>();
 
     }
     public  void StartScenarioStep()
@@ -44,12 +47,14 @@ public abstract class ScenarioStep : MonoBehaviour
     }
     protected IEnumerator WaitTillSoundEnds()
     {
-        if (dspSoundPlayer.GetSoundLenght()!= 0)
+        if (dspSoundPlayer.GetSoundLenght() != 0)
             yield return new WaitForSeconds(dspSoundPlayer.GetSoundLenght());
-    else if(yvkSoundPlayer.GetSoundLenght()!=0)
-        yield return new WaitForSeconds(yvkSoundPlayer.GetSoundLenght());
-        else
+        else if (yvkSoundPlayer.GetSoundLenght() != 0)
+            yield return new WaitForSeconds(yvkSoundPlayer.GetSoundLenght());
+        else if (yvkSoundPlayer2.GetSoundLenght() != 0)
             yield return new WaitForSeconds(yvkSoundPlayer2.GetSoundLenght());
+        else
+            yield return new WaitForSeconds(releSoundPlayer.GetSoundLenght());
         EndActionEvent?.Invoke();
     }
 }
