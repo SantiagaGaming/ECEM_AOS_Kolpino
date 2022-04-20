@@ -16,6 +16,16 @@ public class ReleSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _28sound;
     [SerializeField] private AudioClip _29sound;
     [SerializeField] private AudioClip _30sound;
+    [SerializeField] private AudioClip _31sound;
+    [SerializeField] private AudioClip _32sound;
+    [SerializeField] private AudioClip _33sound;
+    [SerializeField] private AudioClip _34sound;
+    [SerializeField] private AudioClip _35sound;
+    [SerializeField] private AudioClip _36sound;
+    [SerializeField] private AudioClip _37sound;
+    [SerializeField] private AudioClip _38sound;
+    [SerializeField] private AudioClip _39sound;
+    [SerializeField] private AudioClip _40sound;
 
     public void Play19Sound()
     {
@@ -89,4 +99,65 @@ public class ReleSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_30sound);
         currentClip = _30sound;
     }
+    public void Play31Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_31sound);
+        currentClip = _31sound;
+    }
+    public void Play32Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_32sound);
+        currentClip = _32sound;
+    }
+    public void Play33Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_33sound);
+        currentClip = _33sound;
+    }
+    public void Play34Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_34sound);
+        currentClip = _34sound;
+    }
+    public void Play35Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_35sound);
+        currentClip = _35sound;
+    }
+    public void Play36Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_36sound);
+        currentClip = _36sound;
+    }
+    public void Play37Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_37sound);
+        currentClip = _37sound;
+    }
+    public void Play38Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_38sound);
+        currentClip = _38sound;
+    }
+    public void Play39Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_39sound);
+        currentClip = _39sound;
+    }
+    public void Play40Sound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(_40sound);
+        currentClip = _40sound;
+    }
+
 }

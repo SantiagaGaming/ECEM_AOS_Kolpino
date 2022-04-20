@@ -78,6 +78,70 @@ public class ReleScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(releTextHolder.Text30);
             StartCoroutine(WaitTillSoundEnds());
         }
+        if (number == 12)
+        {
+            releSoundPlayer.Play31Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text31);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 13)
+        {
+            releSoundPlayer.Play32Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text32);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 14)
+        {
+            releSoundPlayer.Play33Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text33);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 15)
+        {
+            releSoundPlayer.Play34Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text34);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 16)
+        {
+            releSoundPlayer.Play35Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text35);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 17)
+        {
+            releSoundPlayer.Play36Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text36);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 18)
+        {
+            releSoundPlayer.Play37Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text37);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 19)
+        {
+            releSoundPlayer.Play38Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text38);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 20)
+        {
+            releSoundPlayer.Play39Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text39);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 21)
+        {
+            releSoundPlayer.Play40Sound();
+            playerCanvasController.SetCanvasText(releTextHolder.Text40);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        if (number == 22)
+        {
+            EndScenarioStepEvent?.Invoke();
+        }
 
     }
 }
