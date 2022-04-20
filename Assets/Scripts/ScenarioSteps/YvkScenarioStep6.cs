@@ -416,9 +416,9 @@ public class YvkScenarioStep6 : ScenarioStep
         else if(number ==26)
         {
                 dspSoundPlayer.StopSoundPlayer();
-                _teleporter.TeleportToRele();
-                _talkingManPositionChanger.ChangeToPositionToRele();
-                _canvasPostionChanger.ChangeCanvasPositionToRele();
+                _teleporter.TeleportToRele221();
+                _talkingManPositionChanger.ChangeToPositionToRele221();
+                _canvasPostionChanger.ChangeCanvasPositionToRele221();
                 EndScenarioStepEvent?.Invoke();
         }
     }
