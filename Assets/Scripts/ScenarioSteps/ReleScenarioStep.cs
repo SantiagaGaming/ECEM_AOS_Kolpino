@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ReleScenarioStep : ScenarioStep
 {
+    [SerializeField] private TalkingManPositionChanger _talkingManPositionChanger;
+    [SerializeField] private CanvasPositionChanger _canvasPostionChanger;
+    [SerializeField] private Teleporter _teleporter;
     protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -89,12 +92,20 @@ public class ReleScenarioStep : ScenarioStep
             releSoundPlayer.Play32Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text32);
             StartCoroutine(WaitTillSoundEnds());
+
+            _teleporter.TeleportToRele231();
+            _talkingManPositionChanger.ChangeToPositionToRele231();
+            _canvasPostionChanger.ChangeCanvasPositionToRele231();
         }
         if (number == 14)
         {
             releSoundPlayer.Play33Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text33);
             StartCoroutine(WaitTillSoundEnds());
+
+            _teleporter.TeleportToRele241();
+            _talkingManPositionChanger.ChangeToPositionToRele241();
+            _canvasPostionChanger.ChangeCanvasPositionToRele241();
         }
         if (number == 15)
         {
@@ -113,18 +124,29 @@ public class ReleScenarioStep : ScenarioStep
             releSoundPlayer.Play36Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text36);
             StartCoroutine(WaitTillSoundEnds());
+
+            _teleporter.TeleportToRele261();
+            _talkingManPositionChanger.ChangeToPositionToRele261();
+            _canvasPostionChanger.ChangeCanvasPositionToRele261();
         }
         if (number == 18)
         {
             releSoundPlayer.Play37Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text37);
             StartCoroutine(WaitTillSoundEnds());
+
+            _teleporter.TeleportToRele281();
+            _talkingManPositionChanger.ChangeToPositionToRele281();
+            _canvasPostionChanger.ChangeCanvasPositionToRele281();
         }
         if (number == 19)
         {
             releSoundPlayer.Play38Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text38);
             StartCoroutine(WaitTillSoundEnds());
+            _talkingManPositionChanger.ChangeToPositionToReleDDK();
+            _teleporter.TeleportToReleDDK();
+            _canvasPostionChanger.ChangeCanvasPositionToReleDDK();
         }
         if (number == 20)
         {
