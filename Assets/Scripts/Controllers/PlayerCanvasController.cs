@@ -12,6 +12,7 @@ public class PlayerCanvasController : MonoBehaviour
     [SerializeField] private YvkScenarioStep3 _thirdScenario;
     [SerializeField] private YvkScenarioStep4 _fourthScenario;
     [SerializeField] private YvkScenarioStep6 _sixthScenario;
+    [SerializeField] private DgaScenarioStep _dgaScenario;
     [SerializeField] private NotebookObject _notebook;
 
     private void OnEnable()
@@ -23,6 +24,7 @@ public class PlayerCanvasController : MonoBehaviour
         _sixthScenario.ShowRepeatButtonEvent += OnEnableRepeatButton;
         _fourthScenario.ComputerClickEvent += OnEnableButtons;
         _notebook.ShowNoteBookEvent += OnEnableNextButton;
+        _dgaScenario.EndGameEvent += OnEnableButtons;
 
     }
     private void OnDisable()
@@ -34,6 +36,7 @@ public class PlayerCanvasController : MonoBehaviour
         _sixthScenario.ShowRepeatButtonEvent -= OnEnableRepeatButton;
         _fourthScenario.ComputerClickEvent -= OnEnableButtons;
         _notebook.ShowNoteBookEvent -= OnEnableNextButton;
+        _dgaScenario.EndGameEvent -= OnEnableButtons;
     }
     private void OnStartNextAction()
     {

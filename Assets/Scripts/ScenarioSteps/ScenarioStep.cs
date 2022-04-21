@@ -15,7 +15,7 @@ public abstract class ScenarioStep : MonoBehaviour
     protected DspSoundPlayer dspSoundPlayer;
     protected ReleSoundPlayer releSoundPlayer;
     protected CrossSoundPlayer crossSoundPlayer;
-    protected PitSondPlayer pitSoundPlayer;
+    protected PitSoundPlayer pitSoundPlayer;
     protected DgaSoundPlayer dgaSoundPlayer;
 
     protected YvkTextHolder yvktextHolder = new YvkTextHolder();
@@ -39,7 +39,7 @@ public abstract class ScenarioStep : MonoBehaviour
         dspSoundPlayer = FindObjectOfType<DspSoundPlayer>();
         releSoundPlayer = FindObjectOfType<ReleSoundPlayer>();
         crossSoundPlayer = FindObjectOfType<CrossSoundPlayer>();
-        pitSoundPlayer = FindObjectOfType<PitSondPlayer>();
+        pitSoundPlayer = FindObjectOfType<PitSoundPlayer>();
         dgaSoundPlayer = FindObjectOfType<DgaSoundPlayer>();
         talkingManPositionChanger = FindObjectOfType<TalkingManPositionChanger>();
         canvasPostionChanger = FindObjectOfType<CanvasPositionChanger>();

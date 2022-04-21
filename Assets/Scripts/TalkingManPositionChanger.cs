@@ -14,6 +14,7 @@ public class TalkingManPositionChanger : MonoBehaviour
     [SerializeField] private Transform _relePositionDDK;
     [SerializeField] private Transform _crossPosition;
     [SerializeField] private Transform _pitPosition;
+    [SerializeField] private Transform _dgaPosition;
 
 
     public void ChangeToDspPosition()
@@ -65,5 +66,10 @@ public class TalkingManPositionChanger : MonoBehaviour
     {
         transform.position = _pitPosition.position;
         transform.rotation = _pitPosition.rotation;
+    }
+    public void ChangeToDgaPosition()
+    {
+        transform.position = _dgaPosition.position;
+        transform.rotation = _dgaPosition.rotation;
     }
 }
