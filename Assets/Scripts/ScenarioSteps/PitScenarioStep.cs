@@ -14,12 +14,30 @@ public class PitScenarioStep : ScenarioStep
             talkingManPositionChanger.ChangeToPitPosition();
             teleporter.TeleportToPit();
             canvasPostionChanger.ChangeCanvasPositionToPit();
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright6").StartAction();
         }
         else if(number ==1)
         {
             pitSoundPlayer.Play47Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text47);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("abtcBright3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("ecBright6").RevertAction();
         }
         else if (number == 2)
         {
