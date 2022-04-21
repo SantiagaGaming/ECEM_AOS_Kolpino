@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class DspScenarioStep : ScenarioStep
 {
-    [SerializeField] private TalkingManPositionChanger _talkingManPositionChanger;
-    [SerializeField] private CanvasPositionChanger _canvasPostionChanger;
-    [SerializeField] private Teleporter _teleporter;
+
     protected override void CheckActions(int number)
     {
         if (number == 0)
         {
-            _talkingManPositionChanger.ChangeToDspPosition();
-            _canvasPostionChanger.ChangeCanvasPositionToDsp();
+            talkingManPositionChanger.ChangeToDspPosition();
+            canvasPostionChanger.ChangeCanvasPositionToDsp();
             dspSoundPlayer.PlayBeginSound();
             playerCanvasController.SetCanvasText(dspTextHolder.BeginText);
             StartCoroutine(WaitTillSoundEnds());
@@ -123,9 +121,9 @@ public class DspScenarioStep : ScenarioStep
         {
             dspSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
-            _teleporter.TeleportToYvk();
-            _talkingManPositionChanger.ChangeToYvkPosition();
-            _canvasPostionChanger.ChangeCanvasPositionToYvk();
+            teleporter.TeleportToYvk();
+            talkingManPositionChanger.ChangeToYvkPosition();
+            canvasPostionChanger.ChangeCanvasPositionToYvk();
         }
 
     }

@@ -26,6 +26,10 @@ public abstract class ScenarioStep : MonoBehaviour
     protected PitTextHolder pitTextHolder = new PitTextHolder();
     protected DgaTextHolder dgaTextHolder = new DgaTextHolder();
 
+    protected TalkingManPositionChanger talkingManPositionChanger;
+    protected CanvasPositionChanger canvasPostionChanger;
+    protected Teleporter teleporter;
+
     protected int action;
 
     protected void Awake()
@@ -37,6 +41,9 @@ public abstract class ScenarioStep : MonoBehaviour
         crossSoundPlayer = FindObjectOfType<CrossSoundPlayer>();
         pitSoundPlayer = FindObjectOfType<PitSondPlayer>();
         dgaSoundPlayer = FindObjectOfType<DgaSoundPlayer>();
+        talkingManPositionChanger = FindObjectOfType<TalkingManPositionChanger>();
+        canvasPostionChanger = FindObjectOfType<CanvasPositionChanger>();
+        teleporter = FindObjectOfType<Teleporter>();
 
     }
     public  void StartScenarioStep()

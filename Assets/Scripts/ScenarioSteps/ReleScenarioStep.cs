@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class ReleScenarioStep : ScenarioStep
 {
-    [SerializeField] private TalkingManPositionChanger _talkingManPositionChanger;
-    [SerializeField] private CanvasPositionChanger _canvasPostionChanger;
-    [SerializeField] private Teleporter _teleporter;
+
     protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -93,9 +91,9 @@ public class ReleScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(releTextHolder.Text32);
             StartCoroutine(WaitTillSoundEnds());
 
-            _teleporter.TeleportToRele231();
-            _talkingManPositionChanger.ChangeToRele231Position();
-            _canvasPostionChanger.ChangeCanvasPositionToRele231();
+            teleporter.TeleportToRele231();
+            talkingManPositionChanger.ChangeToRele231Position();
+            canvasPostionChanger.ChangeCanvasPositionToRele231();
         }
         if (number == 14)
         {
@@ -103,9 +101,9 @@ public class ReleScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(releTextHolder.Text33);
             StartCoroutine(WaitTillSoundEnds());
 
-            _teleporter.TeleportToRele241();
-            _talkingManPositionChanger.ChangeToRele241Position();
-            _canvasPostionChanger.ChangeCanvasPositionToRele241();
+            teleporter.TeleportToRele241();
+            talkingManPositionChanger.ChangeToRele241Position();
+            canvasPostionChanger.ChangeCanvasPositionToRele241();
         }
         if (number == 15)
         {
@@ -125,9 +123,9 @@ public class ReleScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(releTextHolder.Text36);
             StartCoroutine(WaitTillSoundEnds());
 
-            _teleporter.TeleportToRele261();
-            _talkingManPositionChanger.ChangeToRele261Position();
-            _canvasPostionChanger.ChangeCanvasPositionToRele261();
+            teleporter.TeleportToRele261();
+            talkingManPositionChanger.ChangeToRele261Position();
+            canvasPostionChanger.ChangeCanvasPositionToRele261();
         }
         if (number == 18)
         {
@@ -135,18 +133,18 @@ public class ReleScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(releTextHolder.Text37);
             StartCoroutine(WaitTillSoundEnds());
 
-            _teleporter.TeleportToRele281();
-            _talkingManPositionChanger.ChangeToRele281Position();
-            _canvasPostionChanger.ChangeCanvasPositionToRele281();
+            teleporter.TeleportToRele281();
+            talkingManPositionChanger.ChangeToRele281Position();
+            canvasPostionChanger.ChangeCanvasPositionToRele281();
         }
         if (number == 19)
         {
             releSoundPlayer.Play38Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text38);
             StartCoroutine(WaitTillSoundEnds());
-            _talkingManPositionChanger.ChangeToReleDDKPosition();
-            _teleporter.TeleportToReleDDK();
-            _canvasPostionChanger.ChangeCanvasPositionToReleDDK();
+            talkingManPositionChanger.ChangeToReleDDKPosition();
+            teleporter.TeleportToReleDDK();
+            canvasPostionChanger.ChangeCanvasPositionToReleDDK();
         }
         if (number == 20)
         {
@@ -162,9 +160,9 @@ public class ReleScenarioStep : ScenarioStep
         }
         if (number == 22)
         {
-            _talkingManPositionChanger.ChangeToCrossPosition();
-            _teleporter.TeleportToCross();
-            _canvasPostionChanger.ChangeCanvasPositionToCross();
+            talkingManPositionChanger.ChangeToCrossPosition();
+            teleporter.TeleportToCross();
+            canvasPostionChanger.ChangeCanvasPositionToCross();
             EndScenarioStepEvent?.Invoke();
         }
 
