@@ -15,12 +15,16 @@ public abstract class ScenarioStep : MonoBehaviour
     protected DspSoundPlayer dspSoundPlayer;
     protected ReleSoundPlayer releSoundPlayer;
     protected CrossSoundPlayer crossSoundPlayer;
+    protected PitSondPlayer pitSoundPlayer;
+    protected DgaSoundPlayer dgaSoundPlayer;
 
     protected YvkTextHolder yvktextHolder = new YvkTextHolder();
     protected DspTextHolder dspTextHolder = new DspTextHolder();
     protected YvkTextHolder2 yvkTextHolder2 = new YvkTextHolder2();
     protected ReleTextHolder releTextHolder = new ReleTextHolder();
     protected CrossTextHolder crossTextHolder = new CrossTextHolder();
+    protected PitTextHolder pitTextHolder = new PitTextHolder();
+    protected DgaTextHolder dgaTextHolder = new DgaTextHolder();
 
     protected int action;
 
@@ -31,6 +35,8 @@ public abstract class ScenarioStep : MonoBehaviour
         dspSoundPlayer = FindObjectOfType<DspSoundPlayer>();
         releSoundPlayer = FindObjectOfType<ReleSoundPlayer>();
         crossSoundPlayer = FindObjectOfType<CrossSoundPlayer>();
+        pitSoundPlayer = FindObjectOfType<PitSondPlayer>();
+        dgaSoundPlayer = FindObjectOfType<DgaSoundPlayer>();
 
     }
     public  void StartScenarioStep()
@@ -60,8 +66,12 @@ public abstract class ScenarioStep : MonoBehaviour
             yield return new WaitForSeconds(yvkSoundPlayer2.GetSoundLenght());
         else if(releSoundPlayer.GetSoundLenght()!=0)
             yield return new WaitForSeconds(releSoundPlayer.GetSoundLenght());
-        else
+        else if(crossSoundPlayer.GetSoundLenght()!=0)
             yield return new WaitForSeconds(crossSoundPlayer.GetSoundLenght());
+        else if(pitSoundPlayer.GetSoundLenght()!=0)
+            yield return new WaitForSeconds(pitSoundPlayer.GetSoundLenght());
+        else
+            yield return new WaitForSeconds(dgaSoundPlayer.GetSoundLenght());
         EndActionEvent?.Invoke();
     }
 }
