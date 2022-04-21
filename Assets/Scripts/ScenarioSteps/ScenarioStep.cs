@@ -9,15 +9,19 @@ public abstract class ScenarioStep : MonoBehaviour
     public UnityAction EndActionEvent;
 
     [SerializeField] protected PlayerCanvasController playerCanvasController;
+
     protected YvkSoundPlayer yvkSoundPlayer;
     protected YvkSoundPlayer2 yvkSoundPlayer2;
     protected DspSoundPlayer dspSoundPlayer;
     protected ReleSoundPlayer releSoundPlayer;
+    protected CrossSoundPlayer crossSoundPlayer;
 
     protected YvkTextHolder yvktextHolder = new YvkTextHolder();
     protected DspTextHolder dspTextHolder = new DspTextHolder();
     protected YvkTextHolder2 yvkTextHolder2 = new YvkTextHolder2();
     protected ReleTextHolder releTextHolder = new ReleTextHolder();
+    protected CrossTextHolder crossTextHolder = new CrossTextHolder();
+
     protected int action;
 
     protected void Awake()
@@ -26,6 +30,7 @@ public abstract class ScenarioStep : MonoBehaviour
         yvkSoundPlayer2 = FindObjectOfType<YvkSoundPlayer2>();
         dspSoundPlayer = FindObjectOfType<DspSoundPlayer>();
         releSoundPlayer = FindObjectOfType<ReleSoundPlayer>();
+        crossSoundPlayer = FindObjectOfType<CrossSoundPlayer>();
 
     }
     public  void StartScenarioStep()
@@ -53,8 +58,10 @@ public abstract class ScenarioStep : MonoBehaviour
             yield return new WaitForSeconds(yvkSoundPlayer.GetSoundLenght());
         else if (yvkSoundPlayer2.GetSoundLenght() != 0)
             yield return new WaitForSeconds(yvkSoundPlayer2.GetSoundLenght());
-        else
+        else if(releSoundPlayer.GetSoundLenght()!=0)
             yield return new WaitForSeconds(releSoundPlayer.GetSoundLenght());
+        else
+            yield return new WaitForSeconds(crossSoundPlayer.GetSoundLenght());
         EndActionEvent?.Invoke();
     }
 }

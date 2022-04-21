@@ -124,7 +124,7 @@ public class DspScenarioStep : ScenarioStep
             dspSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
             _teleporter.TeleportToYvk();
-            _talkingManPositionChanger.ChangeToPositionToYvk();
+            _talkingManPositionChanger.ChangeToYvkPosition();
             _canvasPostionChanger.ChangeCanvasPositionToYvk();
         }
 

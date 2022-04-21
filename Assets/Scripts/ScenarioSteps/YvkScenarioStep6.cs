@@ -417,7 +417,7 @@ public class YvkScenarioStep6 : ScenarioStep
         {
                 dspSoundPlayer.StopSoundPlayer();
                 _teleporter.TeleportToRele221();
-                _talkingManPositionChanger.ChangeToPositionToRele221();
+                _talkingManPositionChanger.ChangeToRele221Position();
                 _canvasPostionChanger.ChangeCanvasPositionToRele221();
                 EndScenarioStepEvent?.Invoke();
         }

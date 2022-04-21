@@ -13,6 +13,7 @@ public class Teleporter : MonoBehaviour
     [SerializeField] private Transform _relePosition261;
     [SerializeField] private Transform _relePosition281;
     [SerializeField] private Transform _relePositionDDK;
+    [SerializeField] private Transform _crossPosition;
     [SerializeField] private CameraFlash _cameraFlash;
 
     public void TeleportToYvk()
@@ -48,6 +49,11 @@ public class Teleporter : MonoBehaviour
     public void TeleportToReleDDK()
     {
         Player.Instance.TeleportTo(_relePositionDDK);
+        _cameraFlash.CameraFlashStart();
+    }
+    public void TeleportToCross()
+    {
+        Player.Instance.TeleportTo(_crossPosition);
         _cameraFlash.CameraFlashStart();
     }
 }
