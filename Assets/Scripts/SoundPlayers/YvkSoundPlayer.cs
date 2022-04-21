@@ -455,11 +455,4 @@ public class YvkSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_220sound);
         currentClip = _220sound;
     }
-
-    public void StopSoundPlayer()
-    {
-        audioSource.Stop();
-    }
-
-
 }

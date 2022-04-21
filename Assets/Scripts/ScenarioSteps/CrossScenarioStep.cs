@@ -39,6 +39,7 @@ public class CrossScenarioStep : ScenarioStep
         else if(number == 5)
         {
             EndScenarioStepEvent?.Invoke();
+            crossSoundPlayer.StopSoundPlayer();
         }
     }
 }

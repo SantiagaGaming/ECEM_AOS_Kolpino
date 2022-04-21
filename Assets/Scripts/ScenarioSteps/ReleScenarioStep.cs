@@ -164,6 +164,7 @@ public class ReleScenarioStep : ScenarioStep
             teleporter.TeleportToCross();
             canvasPostionChanger.ChangeCanvasPositionToCross();
             EndScenarioStepEvent?.Invoke();
+            releSoundPlayer.StopSoundPlayer();
         }
 
     }

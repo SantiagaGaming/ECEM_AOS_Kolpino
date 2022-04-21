@@ -189,6 +189,7 @@ public class PitScenarioStep : ScenarioStep
         }
         else if(number ==22)
         {
+            pitSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
         }
 

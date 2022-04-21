@@ -15,4 +15,8 @@ public class SoundPlayer : MonoBehaviour
     {
         return currentClip.length;
     }
+    public void StopSoundPlayer()
+    {
+        audioSource.Stop();
+    }
 }
