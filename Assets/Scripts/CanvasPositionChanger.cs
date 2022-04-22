@@ -15,7 +15,12 @@ public class CanvasPositionChanger : MonoBehaviour
     [SerializeField] private Transform _relePositionDDK;
     [SerializeField] private Transform _crossPosition;
     [SerializeField] private Transform _pitPosition;
+    [SerializeField] private Transform _ybpPitPosition;
+    [SerializeField] private Transform _rshTshPitPosition;
     [SerializeField] private Transform _dgaPosition;
+    [SerializeField] private Transform _dgaShieldPosition;
+    [SerializeField] private Transform _dgaEndPosition;
+    [SerializeField] private Transform _shbpyPitPosition;
 
     public void ChangeCanvasPostitionToTalkingMan()
     {
@@ -77,5 +82,29 @@ public class CanvasPositionChanger : MonoBehaviour
         transform.position = _dgaPosition.position;
         transform.rotation = _dgaPosition.rotation;
     }
-
+    public void ChangeCanvasPositionToRschTshPit()
+    {
+        transform.position = _rshTshPitPosition.position;
+        transform.rotation = _rshTshPitPosition.rotation;
+    }
+    public void ChangeCanvasPositionToYbpPit()
+    {
+        transform.position = _ybpPitPosition.position;
+        transform.rotation = _ybpPitPosition.rotation;
+    }
+    public void ChangeCanvasPositionToSbpyPit()
+    {
+        transform.position = _shbpyPitPosition.position;
+        transform.rotation = _shbpyPitPosition.rotation;
+    }
+    public void ChangeCanvasPositionToDgaShield()
+    {
+        transform.position = _dgaShieldPosition.position;
+        transform.rotation = _dgaShieldPosition.rotation;
+    }
+    public void ChangeCanvasPositionToDgaEnd()
+    {
+        transform.position = _dgaEndPosition.position;
+        transform.rotation = _dgaEndPosition.rotation;
+    }
 }

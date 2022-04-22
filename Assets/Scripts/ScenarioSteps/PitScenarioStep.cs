@@ -47,6 +47,7 @@ public class PitScenarioStep : ScenarioStep
             pitSoundPlayer.Play48Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text48);
             StartCoroutine(WaitTillSoundEnds());
+            canvasPostionChanger.ChangeCanvasPositionToRschTshPit();
             ObjectsContainer.Instance.TryGetBaseObject("rshBright").StartAction();
         }
         else if (number == 3)
@@ -81,6 +82,7 @@ public class PitScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("itBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").StartAction();
+            canvasPostionChanger.ChangeCanvasPositionToYbpPit() ;
 
         }
         else if (number == 7)
@@ -91,6 +93,7 @@ public class PitScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("shvabBright").StartAction();
+         
         }
         else if (number == 8)
         {
@@ -99,6 +102,7 @@ public class PitScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("shvabBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("shvpyBright").StartAction();
+            canvasPostionChanger.ChangeCanvasPositionToSbpyPit();
         }
 
         else if (number == 9)
@@ -107,6 +111,7 @@ public class PitScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(pitTextHolder.Text56);
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("shvpyBright").RevertAction();
+            canvasPostionChanger.ChangeCanvasPositionToRschTshPit();
         }
         else if (number == 10)
         {
@@ -145,6 +150,8 @@ public class PitScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").StartAction();
+            canvasPostionChanger.ChangeCanvasPositionToYbpPit();
+
         }
         else if (number == 16)
         {
@@ -154,6 +161,7 @@ public class PitScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("itBright").StartAction();
+            canvasPostionChanger.ChangeCanvasPositionToRschTshPit();
         }
         else if (number == 17)
         {
@@ -168,6 +176,7 @@ public class PitScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("itBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("shvpyBright").StartAction();
+            canvasPostionChanger.ChangeCanvasPositionToSbpyPit();
         }
         else if (number == 19)
         {

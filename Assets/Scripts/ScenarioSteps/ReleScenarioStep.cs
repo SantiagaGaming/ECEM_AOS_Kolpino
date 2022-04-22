@@ -9,6 +9,7 @@ public class ReleScenarioStep : ScenarioStep
     {
         if (number == 0)
         {
+            yvkSoundPlayer2.StopSoundPlayer();
             releSoundPlayer.Play19Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text19);
             StartCoroutine(WaitTillSoundEnds());
