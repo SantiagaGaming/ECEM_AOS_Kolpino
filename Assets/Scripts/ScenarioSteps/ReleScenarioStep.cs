@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using AosSdk.Core.Player;
+using AosSdk.Core.Utils;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class ReleScenarioStep : ScenarioStep
 {
 
@@ -13,6 +13,7 @@ public class ReleScenarioStep : ScenarioStep
             releSoundPlayer.Play19Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text19);
             StartCoroutine(WaitTillSoundEnds());
+            Player.Instance.CanMove = false;
         }
         if (number == 1)
         {
@@ -137,6 +138,8 @@ public class ReleScenarioStep : ScenarioStep
             teleporter.TeleportToRele281();
             talkingManPositionChanger.ChangeToRele281Position();
             canvasPostionChanger.ChangeCanvasPositionToRele281();
+   
+         
         }
         if (number == 19)
         {

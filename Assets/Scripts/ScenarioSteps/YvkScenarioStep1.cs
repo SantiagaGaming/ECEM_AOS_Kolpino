@@ -1,4 +1,5 @@
 using System.Collections;
+using AosSdk.Core.Player;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ protected override void CheckActions(int number)
     {
         if(number == 0)
         {
-
+            Player.Instance.CanMove = true;
             yvkSoundPlayer.PlayBeginSound();
             playerCanvasController.SetCanvasText(yvktextHolder.BeginText);
             StartCoroutine(WaitTillSoundEnds());

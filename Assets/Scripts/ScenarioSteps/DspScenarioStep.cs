@@ -1,3 +1,4 @@
+using AosSdk.Core.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class DspScenarioStep : ScenarioStep
             dspSoundPlayer.PlayBeginSound();
             playerCanvasController.SetCanvasText(dspTextHolder.BeginText);
             StartCoroutine(WaitTillSoundEnds());
+            Player.Instance.CanMove = false;
         }
         else if(number == 1)
         {

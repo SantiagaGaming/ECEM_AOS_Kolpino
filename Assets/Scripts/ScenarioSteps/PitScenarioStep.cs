@@ -1,3 +1,4 @@
+using AosSdk.Core.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,7 @@ public class PitScenarioStep : ScenarioStep
             talkingManPositionChanger.ChangeToPitPosition();
             teleporter.TeleportToPit();
             canvasPostionChanger.ChangeCanvasPositionToPit();
+            Player.Instance.CanMove = true;
 
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").StartAction();
