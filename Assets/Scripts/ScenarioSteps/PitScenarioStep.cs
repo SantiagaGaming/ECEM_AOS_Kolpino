@@ -16,10 +16,10 @@ public class PitScenarioStep : ScenarioStep
             pitSoundPlayer.Play46Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text46);
             StartCoroutine(WaitTillSoundEnds());
+            Player.Instance.CanMove = true;
             talkingManPositionChanger.ChangeToPitPosition();
             teleporter.TeleportToPit();
             canvasPostionChanger.ChangeCanvasPositionToPit();
-            Player.Instance.CanMove = true;
 
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").StartAction();
