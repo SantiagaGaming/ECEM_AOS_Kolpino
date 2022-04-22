@@ -26,6 +26,10 @@ public class DspScenarioStep : ScenarioStep
             dspSoundPlayer.Play3Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text3);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright3").StartAction();
+
         }
         else if (number == 3)
         {
@@ -56,18 +60,24 @@ public class DspScenarioStep : ScenarioStep
             dspSoundPlayer.Play8Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text8);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBright3").RevertAction();
         }
         else if (number == 8)
         {
             dspSoundPlayer.Play9Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text9);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBigBright").StartAction();
         }
         else if (number == 9)
         {
             dspSoundPlayer.Play10Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text10);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("monitorBigBright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBright").StartAction();
         }
         else if (number == 10)
         {
@@ -116,6 +126,7 @@ public class DspScenarioStep : ScenarioStep
             dspSoundPlayer.Play18Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text18);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBright").RevertAction();
         }
         else if(number ==18)
         {

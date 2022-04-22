@@ -35,7 +35,7 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text221);
             StartCoroutine(WaitTillSoundEnds());
 
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright1").StartAction();
         }
         else if (number == 4)
         {
@@ -43,8 +43,8 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text222);
             StartCoroutine(WaitTillSoundEnds());
 
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright1").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright2").StartAction();
         }
         else if (number == 5)
         {
@@ -52,8 +52,8 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text223);
             StartCoroutine(WaitTillSoundEnds());
 
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright2").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright3").StartAction();
         }
         else if (number == 6)
         {
@@ -61,7 +61,7 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.Text105_2);
             StartCoroutine(WaitTillSoundEnds());
 
-            ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright3").RevertAction();
 
         }
         else if (number == 7)

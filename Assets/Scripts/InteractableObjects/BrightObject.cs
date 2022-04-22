@@ -11,7 +11,7 @@ public class BrightObject : BaseObject
         base.Start();
         // _showObjectColor = new Color(0.05202916f, 0.6003655f, 0.745283f);
          _baseObjectColor = GetComponent<Renderer>().material.color;
-        _showObjectColor = _baseObjectColor * 1.5f;
+        _showObjectColor = _baseObjectColor * 2;
     }
     public override void StartAction()
     {
