@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PitScenarioStep : ScenarioStep
 {
+    [SerializeField] private BrightComplex _brightComplex1;
+    [SerializeField] private BrightComplex _brightComplex2;
+    [SerializeField] private BrightComplex _brightComplex3;
     protected override void CheckActions(int number)
     {
+        
         if (number == 0)
         {
             pitSoundPlayer.Play46Sound();
@@ -124,18 +128,24 @@ public class PitScenarioStep : ScenarioStep
             pitSoundPlayer.Play58Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text58);
             StartCoroutine(WaitTillSoundEnds());
+            _brightComplex1.EnableBright(true);
+            _brightComplex2.EnableBright(true);
         }
         else if (number == 12)
         {
             pitSoundPlayer.Play59Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text59);
             StartCoroutine(WaitTillSoundEnds());
+            _brightComplex1.EnableBright(false);
+            _brightComplex2.EnableBright(false);
+            _brightComplex3.EnableBright(true);
         }
         else if (number == 13)
         {
             pitSoundPlayer.Play60Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text60);
             StartCoroutine(WaitTillSoundEnds());
+            _brightComplex3.EnableBright(false);
         }
         else if (number == 14)
         {
