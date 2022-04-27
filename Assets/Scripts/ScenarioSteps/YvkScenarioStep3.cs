@@ -53,6 +53,8 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright3").StartAction();
+            
         }
         else if (number == 6)
         {
@@ -61,8 +63,10 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright3").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright2").StartAction();
         }
         else if (number == 7)
         {
@@ -71,8 +75,10 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright1").StartAction();
         }
         else if (number == 8)
         {
@@ -81,6 +87,7 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright1").RevertAction();
         }
         else if (number == 9)
         {

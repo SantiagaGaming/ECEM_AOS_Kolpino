@@ -14,7 +14,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoBodyBright2").StartAction();
         }
-        else if(number==1)
+        else if (number == 1)
         {
             yvkSoundPlayer.Play90_1Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text90_1);
@@ -38,11 +38,11 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").StartAction();
         }
-        else if(number==2)
+        else if (number == 2)
         {
-              yvkSoundPlayer.Play90_2Sound();
-              playerCanvasController.SetCanvasText(yvktextHolder.Text90_2);
-              StartCoroutine(WaitTillSoundEnds());
+            yvkSoundPlayer.Play90_2Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text90_2);
+            StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").RevertAction();
@@ -74,7 +74,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").StartAction();
-       }
+        }
         else if (number == 3)
         {
             yvkSoundPlayer.Play90_3Sound();
@@ -96,7 +96,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").RevertAction();
 
-  
+
             ObjectsContainer.Instance.TryGetBaseObject("usoMbko1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMbko2").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMbko3").StartAction();
@@ -154,20 +154,31 @@ public class YvkScenarioStep5 : ScenarioStep
         }
         else if (number == 6)
         {
-            yvkSoundPlayer.Play208Sound();
-            playerCanvasController.SetCanvasText(yvktextHolder.Text208);
+            yvkSoundPlayer.Play93Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text93);
             StartCoroutine(WaitTillSoundEnds());
-
             ObjectsContainer.Instance.TryGetBaseObject("usoMip1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMip2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMip3").RevertAction();
+        }
+        else if (number == 7)
+        {
+            yvkSoundPlayer.Play94Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text94);
+            StartCoroutine(WaitTillSoundEnds());
+        }
+        else if (number == 8)
+        {
+            yvkSoundPlayer.Play208Sound();
+            playerCanvasController.SetCanvasText(yvktextHolder.Text208);
+            StartCoroutine(WaitTillSoundEnds());
 
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").StartAction();
 
         }
-        else if (number == 7)
+        else if (number == 9)
         {
             yvkSoundPlayer.Play209Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text209);
@@ -182,7 +193,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").StartAction();
 
         }
-        else if (number == 8)
+        else if (number == 10)
         {
             yvkSoundPlayer.Play210Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text210);
@@ -195,7 +206,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").StartAction();
         }
-        else if (number == 9)
+        else if (number == 11)
         {
             yvkSoundPlayer.Play211Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text211);
@@ -209,7 +220,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").StartAction();
         }
-        else if (number == 10)
+        else if (number == 12)
         {
             yvkSoundPlayer.Play212Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text212);
@@ -224,7 +235,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").StartAction();
         }
-        else if (number == 11)
+        else if (number == 13)
         {
             yvkSoundPlayer.Play215Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text215);
@@ -238,7 +249,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").StartAction();
         }
-        else if (number == 12)
+        else if (number == 14)
         {
             yvkSoundPlayer.Play216Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text216);
@@ -251,7 +262,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").StartAction();
         }
-        else if (number == 13)
+        else if (number == 15)
         {
             yvkSoundPlayer.Play217Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text217);
@@ -264,7 +275,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").StartAction();
         }
-        else if (number == 14)
+        else if (number == 16)
         {
             yvkSoundPlayer.Play218Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text218);
@@ -279,7 +290,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").StartAction();
 
         }
-        else if (number == 15)
+        else if (number == 17)
         {
             yvkSoundPlayer.Play219Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text219);
@@ -294,7 +305,7 @@ public class YvkScenarioStep5 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").StartAction();
 
         }
-        else if (number == 16)
+        else if (number == 18)
         {
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").RevertAction();

@@ -9,6 +9,7 @@ public class YvkScenarioStep6 : ScenarioStep
     public UnityAction ShowRepeatButtonEvent;
 
     [SerializeField] private OpenDoorController _openDoorController;
+    [SerializeField] private LampBlinkController _lampBlinkController;
 
     protected override void CheckActions(int number)
     {
@@ -412,7 +413,8 @@ public class YvkScenarioStep6 : ScenarioStep
         }
         else if(number ==26)
         {
-                dspSoundPlayer.StopSoundPlayer();
+            _lampBlinkController.StopBlink();
+            dspSoundPlayer.StopSoundPlayer();
                 teleporter.TeleportToRele221();
                 talkingManPositionChanger.ChangeToRele221Position();
                 canvasPostionChanger.ChangeCanvasPositionToRele221();

@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class YvkScenarioStep1 : ScenarioStep
 {
-
+    [SerializeField] private LampBlinkController _lampBlinkController;
 protected override void CheckActions(int number)
     {
         if(number == 0)
         {
+            _lampBlinkController.StartBlink();
             Player.Instance.CanMove = true;
             yvkSoundPlayer.PlayBeginSound();
             playerCanvasController.SetCanvasText(yvktextHolder.BeginText);
