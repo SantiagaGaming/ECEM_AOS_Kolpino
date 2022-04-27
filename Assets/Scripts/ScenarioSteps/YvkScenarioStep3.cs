@@ -1,4 +1,5 @@
 using System.Collections;
+using AosSdk.Core.Player;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -27,6 +28,8 @@ public class YvkScenarioStep3 : ScenarioStep
             yvkSoundPlayer.Play28Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text28);
             StartCoroutine(WaitTillSoundEnds());
+            teleporter.TeleportToYvk();
+            Player.Instance.CanMove = false;
             ShowRepeatButtonEvent?.Invoke();
         }
         else if (number == 3)

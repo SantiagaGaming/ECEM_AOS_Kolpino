@@ -399,6 +399,7 @@ public class YvkScenarioStep6 : ScenarioStep
             playerCanvasController.SetCanvasText(yvkTextHolder2.CloseDoorActionText);
             _openDoorController.EnableDoorsColliders();
             playerCanvasController.EnableNextRepeatActionButton(false);
+            Player.Instance.CanMove = true;
         }
 
         else if (number == 25)

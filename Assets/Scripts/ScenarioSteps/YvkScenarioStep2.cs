@@ -66,17 +66,10 @@ public class YvkScenarioStep2 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
-
         else if (number == 8)
         {
-            yvkSoundPlayer.Play23Sound();
-            playerCanvasController.SetCanvasText(yvktextHolder.Text23);
             ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").RevertAction();
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 9)
-        {
             EndScenarioStepEvent();
         }
 

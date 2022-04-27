@@ -32,14 +32,14 @@ public class DoorObject : InteractObject
                 {
                     _key.transform.localPosition += new Vector3(0.001f, 0,0 );
                     keyX++;
-                    yield return new WaitForSeconds(0.008f);
+                    yield return new WaitForSeconds(0.004f);
                 }
                 keyXRot = -90;
                 while (keyXRot < 0)
                 {
                     _key.transform.localRotation = Quaternion.Euler(keyXRot, 180, 0);
                     keyXRot++;
-                    yield return new WaitForSeconds(0.01f);
+                    yield return new WaitForSeconds(0.005f);
                 }
 
             y = 90;
@@ -47,7 +47,7 @@ public class DoorObject : InteractObject
             {
                transform.localRotation = Quaternion.Euler(0, y, 0);
                 y--;
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSeconds(0.005f);
             }
             _turn = false;
         }
@@ -59,7 +59,7 @@ public class DoorObject : InteractObject
             {
                 transform.localRotation = Quaternion.Euler(0, y, 0);
                 y++;
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSeconds(0.005f);
             }
 
        
@@ -68,14 +68,14 @@ public class DoorObject : InteractObject
         {
             _key.transform.localRotation = Quaternion.Euler(keyXRot, 180, 0);
             keyXRot--;
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.005f);
         }
         keyX = 40;
         while (keyX > 0)
         {
             _key.transform.localPosition -= new Vector3(0.001f, 0, 0);
             keyX--;
-            yield return new WaitForSeconds(0.008f);
+            yield return new WaitForSeconds(0.004f);
         }
         _key.SetActive(false);
         }
