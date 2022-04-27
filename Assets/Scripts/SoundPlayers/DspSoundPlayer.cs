@@ -15,10 +15,6 @@ public class DspSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _9sound;
     [SerializeField] private AudioClip _10sound;
     [SerializeField] private AudioClip _11sound;
-    [SerializeField] private AudioClip _12sound;
-    [SerializeField] private AudioClip _13sound;
-    [SerializeField] private AudioClip _14sound;
-    [SerializeField] private AudioClip _15sound;
     [SerializeField] private AudioClip _16sound;
     [SerializeField] private AudioClip _17sound;
     [SerializeField] private AudioClip _18sound;
@@ -88,30 +84,6 @@ public class DspSoundPlayer : SoundPlayer
         audioSource.Stop();
         audioSource.PlayOneShot(_11sound);
         currentClip = _11sound;
-    }
-    public void Play12Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_12sound);
-        currentClip = _12sound;
-    }
-    public void Play13Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_13sound);
-        currentClip = _13sound;
-    }
-    public void Play14Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_14sound);
-        currentClip = _14sound;
-    }
-    public void Play15Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_15sound);
-        currentClip = _15sound;
     }
     public void Play16Sound()
     {
