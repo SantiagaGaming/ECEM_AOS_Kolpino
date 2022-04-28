@@ -5,10 +5,7 @@ using UnityEngine;
 public class ReleSoundPlayer : SoundPlayer
 {
     [SerializeField] private AudioClip _19sound;
-    [SerializeField] private AudioClip _20sound;
-    [SerializeField] private AudioClip _21sound;
     [SerializeField] private AudioClip _22sound;
-    [SerializeField] private AudioClip _23sound;
     [SerializeField] private AudioClip _24sound;
     [SerializeField] private AudioClip _25sound;
     [SerializeField] private AudioClip _26sound;
@@ -33,29 +30,11 @@ public class ReleSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_19sound);
         currentClip = _19sound;
     }
-    public void Play20Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_20sound);
-        currentClip = _20sound;
-    }
-    public void Play21Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_21sound);
-        currentClip = _21sound;
-    }
     public void Play22Sound()
     {
         audioSource.Stop();
         audioSource.PlayOneShot(_22sound);
         currentClip = _22sound;
-    }
-    public void Play23Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_23sound);
-        currentClip = _23sound;
     }
     public void Play24Sound()
     {
