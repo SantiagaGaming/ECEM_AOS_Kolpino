@@ -12,31 +12,15 @@ public class CrossScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(crossTextHolder.Text41);
             StartCoroutine(WaitTillSoundEnds());
         }
-       else if (number == 1)
-        {
-            crossSoundPlayer.Play42Sound();
-            playerCanvasController.SetCanvasText(crossTextHolder.Text42);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 2)
+
+        else if (number == 1)
         {
             crossSoundPlayer.Play43Sound();
             playerCanvasController.SetCanvasText(crossTextHolder.Text43);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if (number == 3)
-        {
-            crossSoundPlayer.Play44Sound();
-            playerCanvasController.SetCanvasText(crossTextHolder.Text44);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 4)
-        {
-            crossSoundPlayer.Play45Sound();
-            playerCanvasController.SetCanvasText(crossTextHolder.Text45);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if(number == 5)
+
+        else if(number == 2)
         {
             EndScenarioStepEvent?.Invoke();
             crossSoundPlayer.StopSoundPlayer();
