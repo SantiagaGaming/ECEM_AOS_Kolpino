@@ -78,7 +78,6 @@ public class DgaScenarioStep : ScenarioStep
             playerCanvasController.SetCanvasText(dgaTextHolder.Text75);
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("glushBright").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("pultBright1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("pultBright2").StartAction();
             canvasPostionChanger.ChangeCanvasPositionToDgaShield();
         }
@@ -117,7 +116,6 @@ public class DgaScenarioStep : ScenarioStep
             dgaSoundPlayer.Play81Sound();
             playerCanvasController.SetCanvasText(dgaTextHolder.Text81);
             StartCoroutine(WaitTillSoundEnds());
-            ObjectsContainer.Instance.TryGetBaseObject("pultBright1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("pultBright2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright2").StartAction();
