@@ -28,26 +28,26 @@ public class DoorObject : InteractObject
          
                 _key.SetActive(true);
                 keyX = 0;
-                while (keyX < 40)
+                while (keyX < 20)
                 {
-                    _key.transform.localPosition += new Vector3(0.001f, 0,0 );
+                    _key.transform.localPosition += new Vector3(0.002f, 0,0 );
                     keyX++;
-                    yield return new WaitForSeconds(0.004f);
+                    yield return new WaitForSeconds(0.000002f);
                 }
                 keyXRot = -90;
                 while (keyXRot < 0)
                 {
                     _key.transform.localRotation = Quaternion.Euler(keyXRot, 180, 0);
-                    keyXRot++;
-                    yield return new WaitForSeconds(0.005f);
+                    keyXRot+=2;
+                    yield return new WaitForSeconds(0.0000025f);
                 }
 
             y = 90;
             while (y >= 0)
             {
                transform.localRotation = Quaternion.Euler(0, y, 0);
-                y--;
-                yield return new WaitForSeconds(0.005f);
+                y-=2;
+                yield return new WaitForSeconds(0.0000025f);
             }
             _turn = false;
         }
@@ -58,8 +58,8 @@ public class DoorObject : InteractObject
             while (y <= 90)
             {
                 transform.localRotation = Quaternion.Euler(0, y, 0);
-                y++;
-                yield return new WaitForSeconds(0.005f);
+                y+=2;
+                yield return new WaitForSeconds(0.0000025f);
             }
 
        
@@ -67,15 +67,15 @@ public class DoorObject : InteractObject
         while (keyXRot > -90)
         {
             _key.transform.localRotation = Quaternion.Euler(keyXRot, 180, 0);
-            keyXRot--;
-            yield return new WaitForSeconds(0.005f);
+            keyXRot-=2;
+            yield return new WaitForSeconds(0.0000025f);
         }
-        keyX = 40;
+        keyX = 20;
         while (keyX > 0)
         {
-            _key.transform.localPosition -= new Vector3(0.001f, 0, 0);
-            keyX--;
-            yield return new WaitForSeconds(0.004f);
+            _key.transform.localPosition -= new Vector3(0.002f, 0, 0);
+            keyX-=2;
+            yield return new WaitForSeconds(0.00002f);
         }
         _key.SetActive(false);
         }
