@@ -17,13 +17,8 @@ public class DspScenarioStep : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             Player.Instance.CanMove = false;
         }
-        else if(number == 1)
-        {
-            dspSoundPlayer.Play2Sound();
-            playerCanvasController.SetCanvasText(dspTextHolder.Text2);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 2)
+
+        else if (number == 1)
         {
             dspSoundPlayer.Play3Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text3);
@@ -31,33 +26,15 @@ public class DspScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("monitorBright1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("monitorBright2").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("monitorBright3").StartAction();
-
         }
-        else if (number == 3)
-        {
-            dspSoundPlayer.Play4Sound();
-            playerCanvasController.SetCanvasText(dspTextHolder.Text4);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 4)
+        else if (number == 2)
         {
             dspSoundPlayer.Play5Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text5);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if (number == 5)
-        {
-            dspSoundPlayer.Play6Sound();
-            playerCanvasController.SetCanvasText(dspTextHolder.Text6);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 6)
-        {
-            dspSoundPlayer.Play7Sound();
-            playerCanvasController.SetCanvasText(dspTextHolder.Text7);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 7)
+
+        else if (number == 3)
         {
             dspSoundPlayer.Play8Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text8);
@@ -66,14 +43,14 @@ public class DspScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("monitorBright2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("monitorBright3").RevertAction();
         }
-        else if (number == 8)
+        else if (number == 4)
         {
             dspSoundPlayer.Play9Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text9);
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("monitorBigBright").StartAction();
         }
-        else if (number == 9)
+        else if (number == 5)
         {
             dspSoundPlayer.Play10Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text10);
@@ -81,27 +58,27 @@ public class DspScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("monitorBigBright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("mbkoBright").StartAction();
         }
-        else if (number == 10)
+        else if (number == 6)
         {
             dspSoundPlayer.Play11Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text11);
             StartCoroutine(WaitTillSoundEnds());
         }
 
-        else if (number == 11)
+        else if (number == 7)
         {
             dspSoundPlayer.Play17Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text17);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if (number == 12)
+        else if (number == 8)
         {
             dspSoundPlayer.Play18Sound();
             playerCanvasController.SetCanvasText(dspTextHolder.Text18);
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("mbkoBright").RevertAction();
         }
-        else if(number ==13)
+        else if (number == 9)
         {
             dspSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();
