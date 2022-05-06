@@ -6,10 +6,13 @@ public class LampBlinker : MonoBehaviour
 {
     private Color _currentColor;
     private Color _greyColor;
+    private LampBlinkController _LampBlinkcontroller;
     private void Start()
     {
         _currentColor = GetComponent<Renderer>().material.color;
         _greyColor = Color.gray;
+        _LampBlinkcontroller = FindObjectOfType<LampBlinkController>();
+        _LampBlinkcontroller.AddLampBlinker(this);
     }
     public void EnableBlink(bool value)
     {
