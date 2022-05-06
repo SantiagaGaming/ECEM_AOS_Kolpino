@@ -46,27 +46,22 @@ public class YvkScenarioStep2 : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("crossDoorBright2").RevertAction();
             StartCoroutine(WaitTillSoundEnds());
         }
+
         else if (number == 5)
-        {
-            yvkSoundPlayer.Play20Sound();
-            playerCanvasController.SetCanvasText(yvktextHolder.Text20);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 6)
         {
             yvkSoundPlayer.Play21Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text21);
             StartCoroutine(WaitTillSoundEnds());
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").StartAction();
         }
-        else if (number == 7)
+        else if (number == 6)
         {
             yvkSoundPlayer.Play22Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text22);
-            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").StartAction();
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if (number == 8)
+        else if (number == 7)
         {
             ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("greenLampYvk2").RevertAction();
