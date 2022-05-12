@@ -22,7 +22,6 @@ public class PitScenarioStep : ScenarioStep
             canvasPostionChanger.ChangeCanvasPositionToPit();
             _brightComplex1.EnableBright(true);
             _brightComplex2.EnableBright(true);
-            _brightComplex3.EnableBright(true);
 
             ObjectsContainer.Instance.TryGetBaseObject("ybpBright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bkBright").StartAction();
@@ -220,20 +219,15 @@ public class PitScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("shvpyBright").StartAction();
             canvasPostionChanger.ChangeCanvasPositionToSbpyPit();
         }
+
         else if (number == 19)
-        {
-            pitSoundPlayer.Play66Sound();
-            playerCanvasController.SetCanvasText(pitTextHolder.Text66);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 20)
         {
             pitSoundPlayer.Play67Sound();
             playerCanvasController.SetCanvasText(pitTextHolder.Text67);
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("shvpyBright").RevertAction();
         }
-        else if(number ==21)
+        else if(number ==20)
         {
             pitSoundPlayer.StopSoundPlayer();
             EndScenarioStepEvent?.Invoke();

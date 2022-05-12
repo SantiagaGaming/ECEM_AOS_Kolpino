@@ -45,6 +45,7 @@ public class ReleScenarioStep : ScenarioStep
             teleporter.TeleportToRele231();
             talkingManPositionChanger.ChangeToRele231Position();
             canvasPostionChanger.ChangeCanvasPositionToRele231();
+            Player.Instance.CanMove = false;
         }
         else if (number == 5)
         {
@@ -52,25 +53,14 @@ public class ReleScenarioStep : ScenarioStep
             releSoundPlayer.Play33Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text33);
             StartCoroutine(WaitTillSoundEnds());
-
+            Player.Instance.CanMove = true;
             teleporter.TeleportToRele241();
             talkingManPositionChanger.ChangeToRele241Position();
             canvasPostionChanger.ChangeCanvasPositionToRele241();
             Player.Instance.CanMove = false;
         }
+
         else if (number == 6)
-        {
-            releSoundPlayer.Play34Sound();
-            playerCanvasController.SetCanvasText(releTextHolder.Text34);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 7)
-        {
-            releSoundPlayer.Play35Sound();
-            playerCanvasController.SetCanvasText(releTextHolder.Text35);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 8)
         {
             releSoundPlayer.Play36Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text36);
@@ -81,7 +71,7 @@ public class ReleScenarioStep : ScenarioStep
             canvasPostionChanger.ChangeCanvasPositionToRele261();
             Player.Instance.CanMove = false;
         }
-        else if (number == 9)
+        else if (number == 7)
         {
             releSoundPlayer.Play37Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text37);
@@ -93,7 +83,7 @@ public class ReleScenarioStep : ScenarioStep
             Player.Instance.CanMove = false;
 
         }
-        else if (number == 10)
+        else if (number == 8)
         {
             releSoundPlayer.Play38Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text38);
@@ -104,19 +94,14 @@ public class ReleScenarioStep : ScenarioStep
             canvasPostionChanger.ChangeCanvasPositionToReleDDK();
             Player.Instance.CanMove = false;
         }
-        else if (number == 11)
+        else if (number == 9)
         {
             releSoundPlayer.Play39Sound();
             playerCanvasController.SetCanvasText(releTextHolder.Text39);
             StartCoroutine(WaitTillSoundEnds());
         }
-        else if (number == 12)
-        {
-            releSoundPlayer.Play40Sound();
-            playerCanvasController.SetCanvasText(releTextHolder.Text40);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 13)
+
+        else if (number == 10)
         {
             Player.Instance.CanMove = true;
             talkingManPositionChanger.ChangeToCrossPosition();

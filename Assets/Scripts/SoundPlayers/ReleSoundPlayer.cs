@@ -10,13 +10,10 @@ public class ReleSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _31sound;
     [SerializeField] private AudioClip _32sound;
     [SerializeField] private AudioClip _33sound;
-    [SerializeField] private AudioClip _34sound;
-    [SerializeField] private AudioClip _35sound;
     [SerializeField] private AudioClip _36sound;
     [SerializeField] private AudioClip _37sound;
     [SerializeField] private AudioClip _38sound;
     [SerializeField] private AudioClip _39sound;
-    [SerializeField] private AudioClip _40sound;
 
     public void Play19Sound()
     {
@@ -54,18 +51,6 @@ public class ReleSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_33sound);
         currentClip = _33sound;
     }
-    public void Play34Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_34sound);
-        currentClip = _34sound;
-    }
-    public void Play35Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_35sound);
-        currentClip = _35sound;
-    }
     public void Play36Sound()
     {
         audioSource.Stop();
@@ -90,11 +75,6 @@ public class ReleSoundPlayer : SoundPlayer
         audioSource.PlayOneShot(_39sound);
         currentClip = _39sound;
     }
-    public void Play40Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_40sound);
-        currentClip = _40sound;
-    }
+
 
 }

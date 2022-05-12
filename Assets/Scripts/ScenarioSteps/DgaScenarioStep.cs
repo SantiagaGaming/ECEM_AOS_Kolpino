@@ -116,19 +116,13 @@ public class DgaScenarioStep : ScenarioStep
             dgaSoundPlayer.Play81Sound();
             playerCanvasController.SetCanvasText(dgaTextHolder.Text81);
             StartCoroutine(WaitTillSoundEnds());
+            canvasPostionChanger.ChangeCanvasPositionToDgaEnd();
             ObjectsContainer.Instance.TryGetBaseObject("pultBright2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright1").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright2").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright3").StartAction();
         }
         else if (number == 14)
-        {
-            dgaSoundPlayer.Play82Sound();
-            playerCanvasController.SetCanvasText(dgaTextHolder.Text82);
-            StartCoroutine(WaitTillSoundEnds());
-            canvasPostionChanger.ChangeCanvasPositionToDgaEnd();
-        }
-        else if (number == 15)
         {
             playerCanvasController.SetCanvasText(dgaTextHolder.EndText);
             ObjectsContainer.Instance.TryGetBaseObject("bakBright1").RevertAction();
