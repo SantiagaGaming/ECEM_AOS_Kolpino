@@ -41,7 +41,23 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright11").StartAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip1").StartAction();
+
+            
 
         }
         else if (number == 4)
@@ -51,16 +67,39 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu1Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip1Bright").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright11").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu1").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu4").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu7").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu10").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu13").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip1").RevertAction();
+
             ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright2").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko1").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko2").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko3").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko4").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko5").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright22").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright21").StartAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip2").StartAction();
         }
         else if (number == 5)
         {
@@ -69,25 +108,42 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu2Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip2Bright").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright2").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko1").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko2").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko3").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko4").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko5").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko6").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright22").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright21").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu2").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu5").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu8").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu11").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu14").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip2").RevertAction();
+
             ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").StartAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright1").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko7").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko8").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko9").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko10").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko11").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko12").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko13").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko14").StartAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko15").StartAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright32").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright31").StartAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").StartAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip3").StartAction();
+
         }
         else if (number == 6)
         {
@@ -96,16 +152,25 @@ public class YvkScenarioStep3 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("scpu3Bright").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("cpuMip3Bright").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("mbkoBodyBright1").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko7").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko8").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko9").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko10").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko11").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko12").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko13").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko14").RevertAction();
-            ObjectsContainer.Instance.TryGetBaseObject("usoMbko15").RevertAction();
+
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright32").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoBodyPartBright31").RevertAction();
+
+            ObjectsContainer.Instance.TryGetBaseObject("usoSbs3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi6").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi9").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMsi15").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu3").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu6").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu9").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu12").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMvu15").RevertAction();
+            ObjectsContainer.Instance.TryGetBaseObject("usoMip3").RevertAction();
+
+
 
         }
         else if (number == 7)
