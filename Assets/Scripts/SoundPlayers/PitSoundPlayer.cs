@@ -17,7 +17,6 @@ public class PitSoundPlayer : SoundPlayer
     [SerializeField] private AudioClip _56sound;
     [SerializeField] private AudioClip _57sound;
     [SerializeField] private AudioClip _58sound;
-    [SerializeField] private AudioClip _59sound;
     [SerializeField] private AudioClip _60sound;
     [SerializeField] private AudioClip _61sound;
     [SerializeField] private AudioClip _62sound;
@@ -103,12 +102,6 @@ public class PitSoundPlayer : SoundPlayer
         audioSource.Stop();
         audioSource.PlayOneShot(_58sound);
         currentClip = _58sound;
-    }
-    public void Play59Sound()
-    {
-        audioSource.Stop();
-        audioSource.PlayOneShot(_59sound);
-        currentClip = _59sound;
     }
     public void Play60Sound()
     {

@@ -106,20 +106,15 @@ public class YvkScenarioStep4 : ScenarioStep
             StartCoroutine(WaitTillSoundEnds());
             ObjectsContainer.Instance.TryGetBaseObject("cpuCompBright").StartAction();
         }
+
         else if (number == 14)
-        {
-            yvkSoundPlayer.Play84Sound();
-            playerCanvasController.SetCanvasText(yvktextHolder.Text84);
-            StartCoroutine(WaitTillSoundEnds());
-        }
-        else if (number == 15)
         {
             yvkSoundPlayer.StopSoundPlayer();
             playerCanvasController.SetCanvasText(yvktextHolder.OpenCompActionText);
             _actionCompButton.SetActive(true);
             ComputerClickEvent?.Invoke(false);
         }
-        else if(number == 16)
+        else if(number == 15)
         {
             yvkSoundPlayer.Play85Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text85);
@@ -127,21 +122,21 @@ public class YvkScenarioStep4 : ScenarioStep
             ComputerClickEvent?.Invoke(true);
         }
 
-        else if (number == 17)
+        else if (number == 16)
         {
             yvkSoundPlayer.Play88Sound();
             playerCanvasController.SetCanvasText(yvktextHolder.Text88);
             StartCoroutine(WaitTillSoundEnds());
         }
 
-        else if (number == 18)
+        else if (number == 17)
         {
             yvkSoundPlayer.StopSoundPlayer();
             playerCanvasController.SetCanvasText(yvktextHolder.OpenCompActionText);
             _actionCompButton.SetActive(true);
             ComputerClickEvent?.Invoke(false);
         }
-        else if(number == 19)
+        else if(number == 18)
         {
             ObjectsContainer.Instance.TryGetBaseObject("cpuCompBright").RevertAction();
             ComputerClickEvent?.Invoke(true);
