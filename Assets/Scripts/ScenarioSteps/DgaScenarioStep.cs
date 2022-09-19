@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class DgaScenarioStep : ScenarioStep
 {
     public UnityAction<bool> EndGameEvent;
+    [SerializeField] private GameObject _exitButton;
     protected override void CheckActions(int number)
     {
         if (number == 0)
@@ -128,6 +129,7 @@ public class DgaScenarioStep : ScenarioStep
             ObjectsContainer.Instance.TryGetBaseObject("bakBright1").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright2").RevertAction();
             ObjectsContainer.Instance.TryGetBaseObject("bakBright3").RevertAction();
+            _exitButton.SetActive(true);
             EndGameEvent?.Invoke(false);
         }
     }
