@@ -18,6 +18,7 @@ public abstract class ScenarioStep : MonoBehaviour
     protected PitSoundPlayer pitSoundPlayer;
     protected DgaSoundPlayer dgaSoundPlayer;
 
+    protected StartTextHolder startTextHolder = new StartTextHolder();
     protected YvkTextHolder yvktextHolder = new YvkTextHolder();
     protected DspTextHolder dspTextHolder = new DspTextHolder();
     protected YvkTextHolder2 yvkTextHolder2 = new YvkTextHolder2();
